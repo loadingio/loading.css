@@ -1,0 +1,70 @@
+
+
++keyframes(ld-broadcast)
+  0%
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.9)
+  19%
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.7)
+  20%
+    box-shadow: 0 0 0 6px rgba(0,0,0,0.8)
+  39%
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.6)
+  40%
+    box-shadow: 0 0 0 9px rgba(0,0,0,0.7)
+  60%
+    box-shadow: 0 0 0 8px rgba(0,0,0,0.6)
+    animation-timing-function: cubic-bezier(.5,0,1,.5)
+  100%
+    box-shadow: 0 0 0 0px rgba(0,0,0,0.2)
+.ld.ld-broadcast
+  animation(ld-broadcast 1s infinite ease-out)
+  border-radius: 50%
+
++keyframes(ld-shadow)
+  0%, 100%
+    animation-timing-function: cubic-bezier(.5,0,.5,1)
+  50%
+    animation-timing-function: cubic-bezier(.5,0,.5,1)
+  0%
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.2)
+  50%
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.9)
+  100%
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.2)
+.ld.ld-shadow
+  animation(ld-shadow 1s infinite)
+  border-radius: 50%
+
++keyframes(ld-shadow-a)
+  0%
+    box-shadow: 3px 0px 0 6px rgba(0,0,0,0.5)
+  8.33%
+    box-shadow: 3px 1px 0 6px rgba(0,0,0,0.5)
+  16.67%
+    box-shadow: 2px 3px 0 6px rgba(0,0,0,0.5)
+  25%
+    box-shadow: 0px 3px 0 6px rgba(0,0,0,0.5)
+  33.33%
+    box-shadow: -1px 3px 0 6px rgba(0,0,0,0.5)
+  41.67%
+    box-shadow: -3px 1px 0 6px rgba(0,0,0,0.5)
+  50%
+    box-shadow: -3px 0px 0 6px rgba(0,0,0,0.5)
+  58.33%
+    box-shadow: -3px -1px 0 6px rgba(0,0,0,0.5)
+  66.67%
+    box-shadow: -2px -3px 0 6px rgba(0,0,0,0.5)
+  75%
+    box-shadow: 0px -3px 0 6px rgba(0,0,0,0.5)
+  83.33%
+    box-shadow: 2px -3px 0 6px rgba(0,0,0,0.5)
+  91.67%
+    box-shadow: 3px -2px 0 6px rgba(0,0,0,0.5)
+  100%
+    box-shadow: 3px 0px 0 6px rgba(0,0,0,0.5)
+
+.ld.ld-shadow-a
+  animation(ld-shadow-a .5s infinite)
+  box-shadow: 3px 0px 0 6px rgba(0,0,0,0.5)
+  border-radius: 50%
+

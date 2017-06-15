@@ -1,0 +1,541 @@
+@import '../vars'
+@import '../basic'
+
++keyframes(ld-cycle)
+  0%, 50%, 100%
+    animation-timing-function: cubic-bezier(.5,.5,.5,.5)
+  0%
+    transform: rotate(0)
+  50%
+    transform: rotate(180deg)
+  100%
+    transform: rotate(360deg)
+.ld.ld-cycle
+  animation(ld-cycle 1s infinite linear)
+
++keyframes(ld-spin)
+  0%
+    transform: rotate(0)
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  50%
+    transform: rotate(180deg)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+  100%
+    transform: rotate(360deg)
+.ld.ld-spin
+  animation(ld-spin 1s infinite)
+
++keyframes(ld-spin-fast)
+  0%
+    transform: rotate(0)
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  50%
+    transform: rotate(900deg)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+  100%
+    transform: rotate(1800deg)
+.ld.ld-spin-fast
+  animation(ld-spin-fast 1s infinite)
+
+
++keyframes(ld-heartbeat)
+  0%
+    transform: scale(1.05)
+  5%
+    transform: scale(1.25)
+  39%
+    transform: scale(0.90)
+  45%
+    transform: scale(1.15)
+  60%
+    transform: scale(1.05)
+  100%
+    transform: scale(1.00)
+.ld.ld-heartbeat
+  animation(ld-heartbeat 0.8s infinite cubic-bezier(0.215, 0.61, 0.355, 1))
+
++keyframes(ld-squeeze)
+  0%
+    transform: scale(1,0.5)
+  50%
+    transform: scale(0.5,1)
+  100%
+    transform: scale(1,0.5)
+.ld.ld-squeeze
+  animation(ld-squeeze 0.8s infinite cubic-bezier(0.215, 0.61, 0.355, 1))
+
+$c4 = transparent
+$c5 = #ff9900
++keyframes(ld-blah)
+  0%
+    width: 52px
+    height: 52px
+    margin: -1px 0 0 -1px
+    border-width: 7px
+    border-color: $c4 $c4 white white
+    transform: rotate(0deg)
+  49.99999%
+    width: 52px 52px
+    margin: -1px 0 0 -1px
+    border-width: 7px
+    border-color: $c4 $c4 white white
+    transform: rotate(180deg)
+  50%
+    width: 50px
+    height: 50px
+    margin: 0
+    border-width: 5px
+    border-color: $c4 $c4 $c5 $c5
+    transform: rotate(0deg)
+  100%
+    width: 50px
+    height: 50px
+    margin: 0
+    border-width: 5px
+    border-color: $c4 $c4 $c5 $c5
+    transform: rotate(180deg)
+.ld.ld-blah
+  animation(ld-blah 1s infinite linear)
+
+.ld.ld-rp
+  transform: scale(3)
+  width: 50px
+  height: 50px
+  background: white
+  border-radius: 50%
+  margin: 30px 0 30px 160px
+  overflow: hidden
+  position: relative
+  &:before
+    top: 0
+    left: 0
+    content: " "
+    display: block
+    position: absolute
+    border-radius: 50%
+    width: 50px
+    height: 50px
+    border: 5px solid
+    border-color: $c4 $c4 $c5 $c5
+  &:after
+    top: 0
+    left: 0
+    content: " "
+    display: block
+    position: absolute
+    border-radius: 50%
+    width: 52px
+    height: 52px
+    border: 7px solid
+    border-color: $c4 $c4 white white
+    margin: -1px 0 0 -1px
+    animation(ld-blah 1s infinite ease)
+
++keyframes(ld-rubber)
+  0%
+    transform: scale(1,1)
+  20%
+    transform: scale(1.5,1)
+  30%
+    transform: scale(0.8,1)
+  40%
+    transform: scale(1.3,1)
+  50%
+    transform: scale(0.85,1)
+  60%
+    transform: scale(1.2,1)
+  70%
+    transform: scale(0.9,1)
+  80%
+    transform: scale(1.1,1)
+  90%
+    transform: scale(0.95,1)
+  100%
+    transform: scale(1,1)
+
+.ld.ld-rubber
+  animation(ld-rubber 1s ease-out infinite)
+
++keyframes(ld-tick)
+  0%
+    transform: rotate(0)
+  20%
+    transform: rotate(-30deg)
+  30%
+    transform: rotate(30deg)
+  40%
+    transform: rotate(-21deg)
+  50%
+    transform: rotate(15deg)
+  60%
+    transform: rotate(-10deg)
+  70%
+    transform: rotate(6deg)
+  80%
+    transform: rotate(-2deg)
+  90%
+    transform: rotate(1deg)
+  100%
+    transform: rotate(0deg)
+
+.ld.ld-tick
+  animation(ld-tick 1s ease-out infinite)
+
++keyframes(ld-radio)
+  0%
+    animation-timing-function: cubic-bezier(.3,.27,.13,1)
+  0%
+    transform: scale(0.8)
+    opacity: 0
+  5%
+    transform: scale(1.0)
+    opacity: 1
+  100%
+    transform: scale(1.5)
+    opacity: 0
+
+.ld.ld-radio
+  position: relative
+  display: inline-block
+  margin: 0
+  padding: 0
+  &:after
+    animation(ld-radio 1s infinite)
+    content: " "
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 6px solid #000
+    border-radius: 50%
+    background: none
+.ld.ld-radio.square:after
+  border-radius: 0
+
++keyframes(ld-clock)
+  0%
+    transform: rotate(0deg)
+  8.333%
+    transform: rotate(30deg)
+  16.667%
+    transform: rotate(60deg)
+  25%
+    transform: rotate(90deg)
+  33.333%
+    transform: rotate(120deg)
+  41.667%
+    transform: rotate(150deg)
+  50%
+    transform: rotate(180deg)
+  58.333%
+    transform: rotate(210deg)
+  66.667%
+    transform: rotate(240deg)
+  75%
+    transform: rotate(270deg)
+  83.333%
+    transform: rotate(300deg)
+  91.667%
+    transform: rotate(330deg)
+  100%
+    transform: rotate(360deg)
+.ld.ld-clock
+  animation(ld-clock 9s infinite cubic-bezier(0,.7,.3,1))
+
+
++keyframes(ld-skew)
+  0%, 50%, 100%
+    animation-timing-function: cubic-bezier(.4,0,1,.6)
+  25%, 75%
+    animation-timing-function: cubic-bezier(0,.4,.6,1)
+  0%
+    transform: skewX(20deg) scale(1)
+  25%
+    transform: skewX(0deg) scale(0.9)
+  50%
+    transform: skewX(-20deg) scale(1)
+  75%
+    transform: skewX(0deg) scale(0.9)
+  100%
+    transform: skewX(20deg) scale(1)
+
+.ld.ld-skew
+  animation(ld-skew 1s infinite)
+
+
++keyframes(ld-tremble)
+  0%
+    transform: translate(1%,1%)
+  5%
+    transform: translate(0%,1%)
+  10%
+    transform: translate(1%,2%)
+  15%
+    transform: translate(2%,1%)
+  20%
+    transform: translate(3%,0%)
+  25%
+    transform: translate(1%,2%)
+  30%
+    transform: translate(1%,3%)
+  35%
+    transform: translate(0%,1%)
+  40%
+    transform: translate(1%,1%)
+  45%
+    transform: translate(1%,0%)
+  50%
+    transform: translate(2%,1%)
+  55%
+    transform: translate(1%,2%)
+  60%
+    transform: translate(3%,1%)
+  65%
+    transform: translate(0%,2%)
+  70%
+    transform: translate(3%,0%)
+  75%
+    transform: translate(0%,0%)
+  80%
+    transform: translate(2%,3%)
+  85%
+    transform: translate(1%,0%)
+  90%
+    transform: translate(0%,2%)
+  95%
+    transform: translate(3%,2%)
+
+
+.ld.ld-tremble
+  animation(ld-tremble 1s infinite)
+
++keyframes(ld-hit)
+  0%
+    animation-timing-function: cubic-bezier(.5,0,1,.5)
+    transform: scale(0) translate(0,0) skewX(0)
+  20%
+    transform: scale(1) translate(0,0) skewX(20deg)
+  50%
+    animation-timing-function: cubic-bezier(1,0,1,.5)
+    transform: scale(1) translate(0,0) skewX(20deg)
+  100%
+    transform: scale(1)  translate(0,200%) skewX(20deg)
+.ld.ld-hit
+  animation(ld-hit 2s infinite)
+
++keyframes(ld-wander-h)
+  0%
+    transform: translate(-35%,0)
+  50%
+    transform: translate(35%,0)
+  100%
+    transform: translate(-35%,0)
+.ld.ld-wander-h
+  animation(ld-wander-h 1s infinite ease-out)
+
++keyframes(ld-wander-v)
+  0%
+    transform: translate(0,-35%)
+  50%
+    transform: translate(0,35%)
+  100%
+    transform: translate(0,-35%)
+.ld.ld-wander-v
+  animation(ld-wander-v 1s infinite ease-out)
+
++keyframes(ld-orbit)
+  0%
+    transform: translate(30%,0%) rotate(0deg)
+  12.5%
+    transform: translate(21%,21%) rotate(45deg)
+  25%
+    transform: translate(0%,30%) rotate(90deg)
+  37.5%
+    transform: translate(-21%,21%) rotate(135deg)
+  50%
+    transform: translate(-30%,0%) rotate(180deg)
+  62.5%
+    transform: translate(-21%,-21%) rotate(225deg)
+  75%
+    transform: translate(0%,-30%) rotate(270deg)
+  87.5%
+    transform: translate(21%,-21%) rotate(315deg)
+  100%
+    transform: translate(30%,0%) rotate(360deg)
+
+.ld.ld-orbit
+  animation(ld-orbit 1s infinite linear)
+
++keyframes(ld-fade)
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+.ld.ld-fade
+  animation(ld-fade 1s infinite linear)
+
++keyframes(ld-surprise)
+  0%
+    transform: skewX(0deg) scale(1)
+  10%
+    transform: skewX(-15deg) scale(.8)
+  20%
+    transform: skewX(-15deg) scale(.8)
+  30%
+    transform: skewX(15deg) scale(1.3)
+  40%
+    transform: skewX(-15deg) scale(1.3)
+  50%
+    transform: skewX(15deg) scale(1.3)
+  60%
+    transform: skewX(-15deg) scale(1.3)
+  70%
+    transform: skewX(15deg) scale(1.3)
+  80%
+    transform: skewX(-15deg) scale(1.3)
+  90%
+    transform: skewX(15deg) scale(1.3)
+  100%
+    transform: skewX(-15deg) scale(1.3)
+.ld.ld-surprise
+  animation(ld-surprise 1s infinite linear)
+
++keyframes(ld-shake)
+  0%, 16.6%, 33.3%,50%,66.6%,83.3%
+    animation-timing-function: cubic-bezier(0,.5,.5,1)
+  0%
+    transform: translate(0,0)
+  16.6%
+    transform: translate(-35%,0)
+  33.3%
+    transform: translate(25%,0)
+  50%
+    transform: translate(-12%,0)
+  66.6%
+    transform: translate(6%,0)
+  83.3%
+    transform: translate(-2.5%,0)
+  100%
+    transform: translate(0,0)
+.ld.ld-shake
+  animation(ld-shake 1s infinite linear)
+
++keyframes(ld-jelly)
+  0%, 16.6%, 33.3%,50%,66.6%,83.3%
+    animation-timing-function: cubic-bezier(0,.5,.5,1)
+  0%
+    transform: translate(0,0) skewX(0deg)
+  16.6%
+    transform: translate(-30%,0) skewX(30deg)
+  33.3%
+    transform: translate(25%,0) skewX(-20deg)
+  50%
+    transform: translate(-12%,0) skewX(10deg)
+  66.6%
+    transform: translate(6%,0) skewX(-5deg)
+  83.3%
+    transform: translate(-2.5%,0) skewX(2deg)
+  100%
+    transform: translate(0,0) skewX(0deg)
+.ld.ld-jelly
+  animation(ld-jelly 1s infinite linear)
+
++keyframes(ld-float)
+  0%, 100%
+    animation-timing-function: cubic-bezier(.5,0,1,.5)
+  50%
+    animation-timing-function: linear
+  0%
+    transform: translate(0,0)
+    box-shadow: 0 0 0 rgba(0,0,0,0.3)
+  30%
+    transform: translate(0,-10%)
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3)
+  50%
+    transform: translate(0,-10%)
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3)
+  100%
+    transform: translate(0,0)
+    box-shadow: 0 0 0 rgba(0,0,0,0.3)
+.ld.ld-float
+  animation(ld-float 1s infinite)
+
++keyframes(ld-rotate)
+  0%,33%,66%,100%
+    animation-timing-function: cubic-bezier(.5,0,1,.5)
+  16%,50%,83%
+    animation-timing-function: cubic-bezier(0,.5,.5,1)
+  0%
+    transform: skewX(0deg) skewY(0deg) scaleX(2) scaleY(.5)
+  16% 
+    transform: skewX(45deg) skewY(0deg) scaleX(1) scaleY(1)
+  33%
+    transform: skewX( 0deg) skewY(45deg) scaleX(1) scaleY(1)
+  50%
+    transform: skewX(0deg) skewY(0deg) scaleX(.5) scaleY(2)
+  66% 
+    transform: skewX( 0deg) skewY(-45deg) scaleX(1) scaleY(1)
+  83%
+    transform: skewX(-45deg) skewY(0deg) scaleX(1) scaleY(1)
+  100%
+    transform: skewX(0deg) skewY(0deg) scaleX(2) scaleY(.5)
+
+.ld.ld-rotate
+  animation(ld-rotate 1s infinite)
+
++keyframes(ld-blur)
+  0%
+    filter: blur(0)
+  50%
+    filter: blur(5px)
+  100%
+    filter: blur(0)
+.ld.ld-blur
+  animation(ld-blur 1s infinite)
+
++keyframes(ld-vortex-out)
+  0%
+    transform: rotate(0deg) scale(0)
+    opacity: 1
+  60%
+    transform: rotate(1800deg) scale(1)
+    opacity: 1
+  100%
+    transform: rotate(1800deg) scale(1)
+    opacity: 0
+
+.ld.ld-vortex-out
+  animation(ld-vortex-out 2s infinite)
+  animation-timing-function: cubic-bezier(.5,0,1,.5)
+
++keyframes(ld-vortex-in)
+  0%
+    transform: rotate(1800deg) scale(3)
+    opacity: 0
+  60%
+    transform: rotate(0deg) scale(1)
+    opacity: 1
+  100%
+    opacity: 0
+.ld.ld-vortex-in
+  animation(ld-vortex-in 2s infinite)
+  animation-timing-function: cubic-bezier(.3,0,1,.7)
+
++keyframes(ld-wrench)
+  20%, 36%, 70%, 86%
+    transform(rotate(0deg))
+  0%, 50%, 100%
+    transform(rotate(45deg))
+
+.ld.ld-wrench
+  animation(ld-wrench 1s infinite)
+
+@import 'loading/slide'
+@import 'loading/bounce'
+@import 'loading/rush'
+@import 'loading/flip'
+@import 'loading/shadow'
+@import 'loading/ctrl'

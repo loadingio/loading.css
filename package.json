@@ -1,0 +1,20 @@
+{
+  "author": "zbryikt",
+  "name": "loading.css",
+  "description": "handcrafted css animation dedicated for repeatable, infinitely playing.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/loadingio/loading.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loadingio/loading.css"
+  },
+  "engines": {
+    "node": "=7.6.0",
+    "npm": "=3.9.5"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "stylus": "=0.50.0"
+  }
+}
