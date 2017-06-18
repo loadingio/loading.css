@@ -12,7 +12,7 @@ loading.css is released together with a handy tool which build GIFs from CSS ani
 Usage
 ==================
 
-1. download and include [loading.css](https://raw.githubusercontent.com/loadingio/loading.css/master/dist/loading.css):
+1. download and include [loading.css](https://raw.githubusercontent.com/loadingio/loading.css/c0b955eba7a7d17819d110ec661e199a2482bdea/preview.gif):
 
 
     <link rel="stylesheet" type="text/css" href="loading.css"/>
