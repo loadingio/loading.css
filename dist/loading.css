@@ -1595,6 +1595,38 @@
   -webkit-animation: ld-wrench 1s infinite;
   animation: ld-wrench 1s infinite;
 }
+@keyframes ld-breath {
+  0% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+  50% {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+  100% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+}
+@-webkit-keyframes ld-breath {
+  0% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+  50% {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+  100% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+}
+.ld.ld-breath {
+  -webkit-animation: ld-breath 1s infinite;
+  animation: ld-breath 1s infinite;
+}
 @keyframes ld-slide-rtl {
   0%, 100% {
     animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
@@ -2896,13 +2928,15 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  border: 0.5em solid;
+  border-style: solid;
+  border-width: 0.5em;
   -webkit-background-clip: padding-box;
   border-color: currentColor currentColor currentColor transparent;
 }
 .ld-ring:after {
   border-radius: 50%;
-  border: 0.15em solid;
+  border-style: solid;
+  border-width: 0.15em;
   -webkit-background-clip: padding-box;
   border-color: currentColor currentColor currentColor transparent;
 }
@@ -2911,7 +2945,8 @@
   height: 0;
   background: none;
   border-radius: 50%;
-  border: 0.5em solid;
+  border-style: solid;
+  border-width: 0.5em;
   border-color: currentColor transparent currentColor transparent;
 }
 .ld-cross:after {
@@ -2935,4 +2970,3 @@
 .ld-loader {
   background-size: cover;
 }
-
