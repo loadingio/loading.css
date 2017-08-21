@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 mkdir -p dist
 ./node_modules/.bin/stylus < src/index.styl > dist/loading.css
+./node_modules/.bin/stylus --compress < src/index.styl > dist/loading.min.css

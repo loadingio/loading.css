@@ -2939,6 +2939,7 @@
   border-width: 0.15em;
   -webkit-background-clip: padding-box;
   border-color: currentColor currentColor currentColor transparent;
+  box-sizing: border-box;
 }
 .ld-hourglass:after {
   width: 0;
@@ -2970,3 +2971,4 @@
 .ld-loader {
   background-size: cover;
 }
+
