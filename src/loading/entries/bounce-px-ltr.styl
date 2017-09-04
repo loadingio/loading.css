@@ -1,0 +1,26 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-bounce-px-ltr)
+  0%
+    transform: translate(-80px, -20px)
+  12.5%
+    transform: translate(-60px, -12px)
+  25%
+    transform: translate(-50px, 0)
+  37.5%
+    transform: translate(-25px, -12px)
+  50%
+    transform: translate(0, -20px)
+  62.5%
+    transform: translate(25px, -12px)
+  75%
+    transform: translate(50px, 0)
+  87.5%
+    transform: translate(60px, -12px)
+  100%
+    transform: translate(80px, -20px)
+
+.ld.ld-bounce-px-ltr
+  animation(ld-bounce-px-ltr 1s infinite linear)
+

@@ -1,0 +1,25 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-bounce-rtl)
+  0%
+    transform: translate(160%, -40%)
+  12.5%
+    transform: translate(120%, -23%)
+  25%
+    transform: translate(80%, 0%)
+  37.5%
+    transform: translate(50%, -23%)
+  50%
+    transform: translate(0%, -40%)
+  62.5%
+    transform: translate(-50%, -23%)
+  75%
+    transform: translate(-80%, 0%)
+  87.5%
+    transform: translate(-120%, -23%)
+  100%
+    transform: translate(-160%, -40%)
+
+.ld.ld-bounce-rtl
+  animation(ld-bounce-rtl 1s infinite linear)

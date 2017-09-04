@@ -1,0 +1,35 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-shadow-a)
+  0%
+    box-shadow: 3px 0px 0 6px rgba(0,0,0,0.5)
+  8.33%
+    box-shadow: 3px 1px 0 6px rgba(0,0,0,0.5)
+  16.67%
+    box-shadow: 2px 3px 0 6px rgba(0,0,0,0.5)
+  25%
+    box-shadow: 0px 3px 0 6px rgba(0,0,0,0.5)
+  33.33%
+    box-shadow: -1px 3px 0 6px rgba(0,0,0,0.5)
+  41.67%
+    box-shadow: -3px 1px 0 6px rgba(0,0,0,0.5)
+  50%
+    box-shadow: -3px 0px 0 6px rgba(0,0,0,0.5)
+  58.33%
+    box-shadow: -3px -1px 0 6px rgba(0,0,0,0.5)
+  66.67%
+    box-shadow: -2px -3px 0 6px rgba(0,0,0,0.5)
+  75%
+    box-shadow: 0px -3px 0 6px rgba(0,0,0,0.5)
+  83.33%
+    box-shadow: 2px -3px 0 6px rgba(0,0,0,0.5)
+  91.67%
+    box-shadow: 3px -2px 0 6px rgba(0,0,0,0.5)
+  100%
+    box-shadow: 3px 0px 0 6px rgba(0,0,0,0.5)
+
+.ld.ld-shadow-a
+  animation(ld-shadow-a .5s infinite)
+  box-shadow: 3px 0px 0 6px rgba(0,0,0,0.5)
+  border-radius: 50%

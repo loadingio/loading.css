@@ -1,0 +1,23 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-float)
+  0%, 100%
+    animation-timing-function: cubic-bezier(.5,0,1,.5)
+  50%
+    animation-timing-function: linear
+  0%
+    transform: translate(0,0)
+    box-shadow: 0 0 0 rgba(0,0,0,0.3)
+  30%
+    transform: translate(0,-10%)
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3)
+  50%
+    transform: translate(0,-10%)
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3)
+  100%
+    transform: translate(0,0)
+    box-shadow: 0 0 0 rgba(0,0,0,0.3)
+
+.ld.ld-float
+  animation(ld-float 1s infinite)

@@ -1,0 +1,14 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-wander-px-v)
+  0%
+    transform: translate(0,-35px)
+  50%
+    transform: translate(0,35px)
+  100%
+    transform: translate(0,-35px)
+.ld.ld-wander-px-v
+  animation(ld-wander-px-v 1s infinite ease-out)
+
+

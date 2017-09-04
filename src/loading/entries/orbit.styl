@@ -1,0 +1,25 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-orbit)
+  0%
+    transform: translate(30%,0%) rotate(0deg)
+  12.5%
+    transform: translate(21%,21%) rotate(45deg)
+  25%
+    transform: translate(0%,30%) rotate(90deg)
+  37.5%
+    transform: translate(-21%,21%) rotate(135deg)
+  50%
+    transform: translate(-30%,0%) rotate(180deg)
+  62.5%
+    transform: translate(-21%,-21%) rotate(225deg)
+  75%
+    transform: translate(0%,-30%) rotate(270deg)
+  87.5%
+    transform: translate(21%,-21%) rotate(315deg)
+  100%
+    transform: translate(30%,0%) rotate(360deg)
+
+.ld.ld-orbit
+  animation(ld-orbit 1s infinite linear)

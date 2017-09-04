@@ -1,0 +1,17 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-hit)
+  0%
+    animation-timing-function: cubic-bezier(.5,0,1,.5)
+    transform: scale(0) translate(0,0) skewX(0)
+  20%
+    transform: scale(1) translate(0,0) skewX(20deg)
+  50%
+    animation-timing-function: cubic-bezier(1,0,1,.5)
+    transform: scale(1) translate(0,0) skewX(20deg)
+  100%
+    transform: scale(1)  translate(0,200%) skewX(20deg)
+
+.ld.ld-hit
+  animation(ld-hit 2s infinite)

@@ -1,0 +1,19 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-slide-btt)
+  0%, 100%
+    animation-timing-function: cubic-bezier(.5,0,1,.5)
+  50%
+    animation-timing-function: cubic-bezier(0,.5,.5,1)
+  0%
+    transform: translate(0,0)
+  49.9%
+    transform: translate(0,-200%)
+  50%
+    transform: translate(0,200%)
+  100%
+    transform: translate(0,0)
+
+.ld.ld-slide-btt
+  animation(ld-slide-btt 1s infinite)

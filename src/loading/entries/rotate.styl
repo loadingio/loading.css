@@ -1,0 +1,25 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-rotate)
+  0%,33%,66%,100%
+    animation-timing-function: cubic-bezier(.5,0,1,.5)
+  16%,50%,83%
+    animation-timing-function: cubic-bezier(0,.5,.5,1)
+  0%
+    transform: skewX(0deg) skewY(0deg) scaleX(2) scaleY(.5)
+  16% 
+    transform: skewX(45deg) skewY(0deg) scaleX(1) scaleY(1)
+  33%
+    transform: skewX( 0deg) skewY(45deg) scaleX(1) scaleY(1)
+  50%
+    transform: skewX(0deg) skewY(0deg) scaleX(.5) scaleY(2)
+  66% 
+    transform: skewX( 0deg) skewY(-45deg) scaleX(1) scaleY(1)
+  83%
+    transform: skewX(-45deg) skewY(0deg) scaleX(1) scaleY(1)
+  100%
+    transform: skewX(0deg) skewY(0deg) scaleX(2) scaleY(.5)
+
+.ld.ld-rotate
+  animation(ld-rotate 1s infinite)

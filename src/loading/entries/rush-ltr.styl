@@ -1,0 +1,20 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-rush-ltr)
+  0%
+    transform: translate(-200%,0) skewX(45deg)
+    animation-timing-function: cubic-bezier(0,.5,.5,1)
+  30%
+    transform: translate(40%,0) skewX(-35deg)
+  45%
+    transform: translate(-20%,0) skewX(15deg)
+  60%
+    transform: translate(10%,0) skewX(-7deg)
+  80%
+    transform: translate(0%,0) skewX(0deg)
+  100%
+    transform: translate(250%,0) skewX(45deg)
+
+.ld.ld-rush-ltr
+  animation(ld-rush-ltr 1.5s infinite linear)

@@ -1,0 +1,18 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-shadow)
+  0%, 100%
+    animation-timing-function: cubic-bezier(.5,0,.5,1)
+  50%
+    animation-timing-function: cubic-bezier(.5,0,.5,1)
+  0%
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.2)
+  50%
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.9)
+  100%
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.2)
+
+.ld.ld-shadow
+  animation(ld-shadow 1s infinite)
+  border-radius: 50%
