@@ -1549,6 +1549,46 @@
   -webkit-animation: ld-wrench 1s infinite;
   animation: ld-wrench 1s infinite;
 }
+@keyframes ld-pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  51% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@-webkit-keyframes ld-pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  51% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.ld.ld-pulse {
+  -webkit-animation: ld-pulse 0.8s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: ld-pulse 0.8s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
 @keyframes ld-bounce {
   0%, 90% {
     animation-timing-function: linear;

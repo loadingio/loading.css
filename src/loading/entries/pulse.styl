@@ -1,0 +1,16 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
++keyframes(ld-pulse)
+  0%
+    transform: scale(1.1)
+  50%
+    transform: scale(0.9)
+  51%
+    transform: scale(1.1)
+  100%
+    transform: scale(0.9)
+
+.ld.ld-pulse
+  animation(ld-pulse 0.8s infinite cubic-bezier(0.215, 0.61, 0.355, 1))
+
