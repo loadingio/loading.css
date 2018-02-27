@@ -4457,7 +4457,7 @@
   -webkit-animation: ld-wander-px-v 1s infinite ease-out;
   animation: ld-wander-px-v 1s infinite ease-out;
 }
-@keyframes ld-jingle {
+@keyframes ld-jingle-px {
   0% {
     -webkit-transform: translate(0, -40px) rotate(0deg) translate(0, 40px);
     transform: translate(0, -40px) rotate(0deg) translate(0, 40px);
@@ -4551,7 +4551,7 @@
     transform: translate(0, -40px) rotate(0deg) translate(0, 40px);
   }
 }
-@-webkit-keyframes ld-jingle {
+@-webkit-keyframes ld-jingle-px {
   0% {
     -webkit-transform: translate(0, -40px) rotate(0deg) translate(0, 40px);
     transform: translate(0, -40px) rotate(0deg) translate(0, 40px);
@@ -4645,8 +4645,8 @@
     transform: translate(0, -40px) rotate(0deg) translate(0, 40px);
   }
 }
-.ld.ld-jingle {
-  -webkit-animation: ld-jingle 1s infinite;
-  animation: ld-jingle 1s infinite;
+.ld.ld-jingle-px {
+  -webkit-animation: ld-jingle-px 1s infinite;
+  animation: ld-jingle-px 1s infinite;
 }
 
