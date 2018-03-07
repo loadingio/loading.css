@@ -1,0 +1,29 @@
+@import '../../vars.styl'
+@import '../../basic.styl'
+
+angle = 3deg
+dx = 5%
+dy = 10%
+
++keyframes(ld-swim)
+  0%
+    transform: translate(0,0) rotate(angle * 0)
+  12.5%
+    transform: translate(dx,-1 * dy) rotate(angle * 1)
+  25%
+    transform: translate(0,-1.5 * dy) rotate(angle * 2)
+  37.5%
+    transform: translate(-1 * dx,-1 * dy) rotate(angle * 1)
+  50%
+    transform: translate(0,0) rotate(angle * 0)
+  62.5%
+    transform: translate(dx,1 * dy) rotate(angle * -1)
+  75%
+    transform: translate(0,1.5 * dy) rotate(angle * -2)
+  87.5%
+    transform: translate(-1 * dx,1 * dy) rotate(angle * -1)
+  100%
+    transform: translate(0,0) rotate(angle * 0)
+
+.ld.ld-swim
+  animation(ld-swim 3s infinite linear)
