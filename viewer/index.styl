@@ -1,0 +1,112 @@
+
+
+.box
+  width: 64px
+  height: 64px
+  border: 1px solid #ccc
+  background: #eee
+  margin: 10px
+  padding: 32px
+  overflow: hidden
+  display: inline-block
+
+.item
+  width: 48px
+  height: 48px
+  border: 8px solid transparent
+  border-top-color: #000
+  background: #ccc
+  border-radius: 50%
+
+.name
+  text-align: center
+  font-size: 14px
+  font-family: arial
+
+/*
+.item.spin
+  animation: spin 1s linear infinite
+
+.item.fast-spin
+  animation: fast-spin 1s linear infinite
+
+.item.cycle
+  animation: cycle 1s linear infinite
+
+.item.beat
+  animation: beat 1s linear infinite
+
+.item.slide
+  animation: slide 1s linear infinite
+
+.item.jump
+  animation: jump 1s linear infinite
+
+.item.tremble
+  animation: tremble 1s linear infinite
+
+.item.rush
+  animation: rush 1s linear infinite
+
+.item.flip
+  animation: flip 8s linear infinite
+
+.item.rubber
+  animation: rubber 1s ease-out infinite
+
+.item.tick
+  animation: tick 1s ease-out infinite
+
+.item.oscillate
+  animation: oscillate 1s ease-out infinite
+
+.item.skew
+  animation: skewx 1s ease-out infinite
+
+.item.turn
+  animation: turn 1s ease-out infinite
+
+@import 'animation/spin/index.styl'
+@import 'animation/slide/index.styl'
+@import 'animation/bounce/index.styl'
+@import 'animation/beat/index.styl'
+@import 'animation/tremble/index.styl'
+@import 'animation/rush/index.styl'
+@import 'animation/flip/index.styl'
+@import 'animation/rubber/index.styl'
+
+ld-spin("spin", 0.3, 2) 
+ld-spin("cycle", 0.0, 1)
+ld-spin("fast-spin", 0.5, 5) 
+
+.item.swing
+  animation: swing 1s linear infinite
+
+.item.patrol
+  animation: patrol 1s linear infinite
+
+.item.dilate
+  animation: dilate 1s linear infinite
+
+.item.dim
+  animation: dim 1s linear infinite
+
+timing-step(rate)
+  animation-timing-function: cubic-bezier(rate,0,1 - rate,1)
+
+patrol(name, rate, max, func)
+  @keyframes name
+    0%,50%,100%
+      timing-step(rate)
+    0%
+      func(-1 * max)
+    50%
+      func(1 * max)
+    100%
+      func(-1 * max)
+
+patrol("swing", 0.6, 30deg, @(v) { transform: rotate(v) })
+patrol("patrol", 0.6, 10, @(v) { transform: translate(v * 1px,0) rotate(v * 1deg) })
+patrol("dilate", 0.6, 0.03, @(v) { transform: scale(1 + v * 2 - 0.03)})
+patrol("dim", 0.6, 0.5, @(v) { opacity: 0.5 + v })
+*/

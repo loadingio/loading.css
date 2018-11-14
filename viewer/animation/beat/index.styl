@@ -1,0 +1,38 @@
+
+//- jump
+rate = 0.3
+r = 0.6
+N = 3
+R = 100 * (r - 1) / (r ** (N + 1) - 1)
+D = -50px
+k = 1.1
+alpha = 1
+
+//- bounce
+N = 1
+rate = .5
+r = .5
+R = 100 * (r - 1) / (r ** (N + 1) - 1)
+k = 0
+D = 0.7
+mD = 0.9
+alpha = 0.9
+
+@keyframes beat
+  0%
+    transform: scale(mD)
+    animation-timing-function: cubic-bezier(0,rate,1 - rate, 1)
+  for num in (0..N)
+    p = (r ** ( num + 1 ) - 1) / (r - 1)
+    p2 = p - (r ** num) * 0.5
+    d2 = D * ((r ** k) ** num)
+    {R * 1% * p2 }
+      transform: scale(d2)
+      animation-timing-function: cubic-bezier(rate,0,1,1 - rate)
+    {R * 1% * p}
+      transform: scale(mD)
+      animation-timing-function: cubic-bezier(0,rate,1 - rate, 1)
+
+rate = 0.3
+offset = 50px
+

@@ -1,0 +1,88 @@
+@-moz-keyframes beat {
+  0% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  33.333333333333336% {
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  66.66666666666667% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  83.33333333333334% {
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  100% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+}
+@-webkit-keyframes beat {
+  0% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  33.333333333333336% {
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  66.66666666666667% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  83.33333333333334% {
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  100% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+}
+@-o-keyframes beat {
+  0% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  33.333333333333336% {
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  66.66666666666667% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  83.33333333333334% {
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  100% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+}
+@keyframes beat {
+  0% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  33.333333333333336% {
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  66.66666666666667% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  83.33333333333334% {
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  100% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+}

@@ -1,0 +1,80 @@
+@-moz-keyframes flip {
+  0%, 25%, 50%, 75%, 100% {
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(1800deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(1800deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+@-webkit-keyframes flip {
+  0%, 25%, 50%, 75%, 100% {
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(1800deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(1800deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+@-o-keyframes flip {
+  0%, 25%, 50%, 75%, 100% {
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(1800deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(1800deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+@keyframes flip {
+  0%, 25%, 50%, 75%, 100% {
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(1800deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(1800deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}

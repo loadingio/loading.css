@@ -1,0 +1,20 @@
+//- module
+
+bounce(name, dur, iterations, accelerate, decay, power, offset, func)
+  R = 100 * (decay - 1) / (decay ** (iterations + 1) - 1)
+  .{name}
+    animation: unquote(name) dur linear infinite
+  @keyframes {name}
+    0%
+      func(0,0)
+      timing-speed-down(accelerate)
+    for num in (0..iterations)
+      p = (decay ** ( num + 1 ) - 1) / (decay - 1)
+      p2 = p - (decay ** num) * 0.5
+      d = offset * ((decay ** power) ** num)
+      {R * 1% * p2 }
+        func(d,num * 2 + 1)
+        timing-speed-up(accelerate)
+      {R * 1% * p}
+        func(0,num * 2 + 2)
+        timing-speed-down(accelerate)

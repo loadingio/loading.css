@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    link(rel="stylesheet",type="text/css",href="index.css")
+    link(rel="stylesheet",type="text/css",href="loading.css")
+  body
+    .container
+      - var types = [];
+      - types = types.concat(["swing","wander","wander-v","metronome","breath","dim"]);
+      - types = types.concat(["spin","spin-fast","cycle","flip-v","flip-h","flip", "coin-h", "coin-v"]);
+      - types = types.concat(["beat","pulse","jump","bounce-alt","tick-alt"]);
+      - types = types.concat(["slide-ltr","slide-rtl","slide-ttb","slide-btt"]);
+      - types = types.concat(["tremble", "swim", "measure", "shiver"]);
+      - types = types.concat(["rush-ltr", "rush-rtl"]);
+      - types = types.concat(["tick","smash","rubber","rubber-v","shake","shake-v","jelly","jelly-alt","jingle","damage"]);
+      - types = types.concat(["heartbeat","hit","bounce","squeeze","bounce-a","bounce-a-alt","bounce-ltr","bounce-rtl", "bounce-ltr-alt", "bounce-rtl-alt"]);
+      - types = types.concat(["vortex-in","vortex-out","clock", "orbit", "fade", "surprise", "blink", "wrench", "slot","leaf", "float", "blur"]);
+      each type in types
+        .box
+          .item(class="ld-" + type)
+          .name= type
+      hr
+      .box
+          .ld-orbit(style="animation-duration:3s"): img(src="bee-01.svg",style="transform:rotate(-90deg)")
+      .box
+          .ld-orbit(style="animation-duration:4s"): img(src="bee.png",style="width:32px")

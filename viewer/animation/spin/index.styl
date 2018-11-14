@@ -1,0 +1,13 @@
+rate = 0.3
+cycle = 2
+
+ld-spin(name, rate, cycle)
+  @keyframes name
+    0%
+      transform: rotate(0deg)
+      animation-timing-function: cubic-bezier(0,rate,1 - rate,1)
+    50%
+      transform: rotate(180deg * cycle)
+      animation-timing-function: cubic-bezier(rate,0,1,1 - rate)
+    100%
+      transform: rotate(360deg * cycle)

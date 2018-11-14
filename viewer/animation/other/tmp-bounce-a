@@ -1,0 +1,45 @@
+ret = do
+  name: \bounce-a
+  desc: ''
+  edit: do
+    dur: default: 2
+    accelerate: default: 0.2, type: \number, min: 0, max: 1
+    zoom_max: default: 1.1, type: \number, min: 1, max: 2, step: 0.1
+    zoom_min: default: 0.5, type: \number, min: 0, max: 1, step: 0.1
+    offset_x: default: 10, type: \number, unit: \px, min: 0, max: 1000
+    offset_top: default: 27, type: \number, unit: \px, min: 0, max: 3000
+    offset_bottom: default: 30, type: \number, unit: \px, min: 0, max: 3000
+
+  code: (config) ->  
+    """
+    @keyframes ld-bounce-a
+      0%, 45%, 50%, 95%
+        animation-timing-function: linear
+      5%, 55%
+        timing-speed-down(config.accelerate)
+      25%, 75%
+        timing-speed-up(config.accelerate)
+      0%
+        transform: translate(-1 * config.offset_x,config.offset_bottom) scaleY(config.zoom_min)
+      5%
+        transform: translate(-1 * config.offset_x,5%) scaleY(config.zoom_max)
+      25%
+        transform: translate(0,-1 * config.offset_top) scaleY(config.zoom_max)
+      45%
+        transform: translate(config.offset_x,5%) scaleY(config.zoom_max)
+      50%
+        transform: translate(config.offset_x,config.offset_bottom) scaleY(config.zoom_min)
+      55%
+        transform: translate(config.offset_x,5%) scaleY(config.zoom_max)
+      75%
+        transform: translate(0,-1 * config.offset_top) scaleY(config.zoom_max)
+      95%
+        transform: translate(-1 * config.offset_x,5%) scaleY(config.zoom_max)
+      100%
+        transform: translate(-1 * config.offset_x,config.offset_bottom) scaleY(config.zoom_min)
+
+    .ld-bounce-a
+      animation: ld-bounce-a config.dur infinite
+    """
+
+if module? => module.exports = ret
