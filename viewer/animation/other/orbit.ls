@@ -3,6 +3,15 @@ ret = do
   desc: ''
   edit: do
     radius: default: 60, type: \number, unit: \%, min: 0, max: 1000
+
+  step: (t, config = {}) ->
+    t = t - Math.floor(t)
+    a = Math.PI * 2 * t
+    tx = Math.sin(a) * config.radius
+    ty = -1 * Math.cos(a) * config.radius
+    rz = a
+    return {tx, ty}, {rz}
+
   code: (config) ->  
     """
     @keyframes ld-orbit
