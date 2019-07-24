@@ -14,7 +14,7 @@
     "npm": "=3.9.5"
   },
   "scripts": {},
-  "dependencies": {
-    "stylus": "=0.54.5"
+  "devDependencies": {
+    "stylus": "^0.54.5"
   }
 }
