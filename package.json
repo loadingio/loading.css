@@ -1,6 +1,7 @@
 {
   "author": "zbryikt",
   "name": "loading.css",
+  "license": "MIT",
   "description": "handcrafted css animation dedicated for repeatable, infinitely playing.",
   "version": "0.0.1",
   "homepage": "https://github.com/loadingio/loading.css",
@@ -12,9 +13,8 @@
     "node": "=7.6.0",
     "npm": "=3.9.5"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
-    "stylus": "=0.50.0"
+    "stylus": "=0.54.5"
   }
 }
