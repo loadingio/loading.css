@@ -1,7 +1,3 @@
-@import '../basic'
-
-debug = false
-
 types = ld-ball ld-ring ld-hourglass ld-loader ld-cross ld-square ld-pie ld-spinner
 
 list = '.' + types[0]
@@ -16,8 +12,6 @@ shapeCls = join(',',list)
   position: relative
   color: inherit
   display: inline-block
-  if debug
-    border: 1px dashed #000
   &:after
     position: absolute
     margin: auto
@@ -31,12 +25,6 @@ shapeCls = join(',',list)
     display: inline-block
     background: center center no-repeat
     background-size: cover
-  /*
-  &:before
-    content: "◎"
-    display: block
-    visibility: hidden
-  */
 
 .ld-ball:after
   border-radius: 50%

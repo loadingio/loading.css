@@ -1,4 +1,20 @@
 #!/usr/bin/env bash
 mkdir -p dist
-./node_modules/.bin/stylus --include src/loading < src/loading/index.styl > dist/loading.css
-./node_modules/.bin/stylus --include src/loading --compress < src/loading/index.styl > dist/loading.min.css
+
+echo "build src/ctrl.styl -> dist/ctrl.css ..."
+./node_modules/.bin/stylus -p src/ctrl.styl > dist/ctrl.css
+echo "build src/shape.styl -> dist/shape.css ..."
+./node_modules/.bin/stylus -p src/shape.styl > dist/shape.css
+echo "build animations..."
+./node_modules/.bin/lsc tool/build-css.ls > dist/main.css
+
+echo "merge css files into loading.css..."
+cat dist/shape.css dist/ctrl.css dist/main.css > dist/loading.css
+echo "minifying loading.css ..."
+./node_modules/.bin/uglifycss dist/loading.css > dist/loading.min.css
+echo "zipping..."
+zip -r dist/loading-css.zip dist/loading.min.css
+echo "clean up intermediate files..."
+rm dist/ctrl.css dist/shape.css dist/main.css
+
+echo "done."
