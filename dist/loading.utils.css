@@ -23,16 +23,16 @@
 .ld-spinner:after {
   content: " ";
   display: block;
-  width: 10em;
-  height: 10em;
+  width: 2em;
+  height: 2em;
   box-sizing: border-box;
   transform-origin: 0em 0em;
-  transform: translateZ(0) scale(0.1);
+  transform: translateZ(0) scale(0.5);
   backface-visibility: hidden;
 }
 .ld-ring:after {
   border-radius: 50%;
-  border: 1.5em solid currentColor;
+  border: 0.3em solid currentColor;
   border-left-color: transparent;
 }
 .ld-ball:after {
@@ -41,28 +41,27 @@
 }
 .ld-hourglass:after {
   border-radius: 50%;
-  border: 5em solid currentColor;
+  border: 1em solid currentColor;
   border-left-color: transparent;
   border-right-color: transparent;
 }
 .ld-cross:after {
   position: absolute;
-  height: 2.5em;
-  transform: translateZ(0) scale(0.1) translate(0, 3.5em);
+  height: 0.5em;
+  transform: translateZ(0) scale(0.5) translate(0, 0.75em);
   background: currentColor;
 }
 .ld-cross:before {
   content: " ";
   display: block;
-  width: 10em;
-  height: 10em;
+  width: 0.5em;
+  height: 2em;
   box-sizing: border-box;
   transform-origin: 0em 0em;
-  transform: translateZ(0) scale(0.1);
   backface-visibility: hidden;
   position: absolute;
-  width: 2.5em;
-  transform: translateZ(0) scale(0.1) translate(3.5em, 0);
+  width: 0.5em;
+  transform: translateZ(0) scale(0.5) translate(0.75em, 0);
   background: currentColor;
 }
 .ld-square:after {
@@ -70,17 +69,17 @@
 }
 .ld-pie:after {
   border-radius: 50%;
-  border: 5em solid currentColor;
+  border: 1em solid currentColor;
   border-left-color: transparent;
 }
 .ld-spinner:after {
   position: absolute;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(0) scale(0.1) translate(4em, 4em);
+  width: 0.4em;
+  height: 0.4em;
+  transform: translateZ(0) scale(0.5) translate(0.8em, 0.8em);
   border-radius: 50%;
   background: none;
-  box-shadow: 0 5em 0 0 currentColor,0 -5em 0 0 currentColor,5em 0 0 0 currentColor,-5em 0 0 0 currentColor,3.5355339059327373em 3.5355339059327373em 0 0 currentColor,-3.5355339059327373em 3.5355339059327373em 0 0 currentColor,3.5355339059327373em -3.5355339059327373em 0 0 currentColor,-3.5355339059327373em -3.5355339059327373em 0 0 currentColor;
+  box-shadow: 0 1em 0 currentColor,0 -1em 0 currentColor,1em 0 0 currentColor,-1em 0 0 currentColor,.70710678em .70710678em 0 currentColor,-.70710678em .70710678em 0 currentColor,.70710678em -.70710678em 0 currentColor,-.70710678em -.70710678em 0 currentColor;
 }
 .ld-loader {
   background-size: cover;
