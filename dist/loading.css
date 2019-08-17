@@ -11,6 +11,7 @@
   position: relative;
   color: inherit;
   display: inline-block;
+  box-sizing: content-box;
 }
 .ld-ball:after,
 .ld-ring:after,
@@ -20,66 +21,66 @@
 .ld-square:after,
 .ld-pie:after,
 .ld-spinner:after {
-  position: absolute;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   content: " ";
-  display: inline-block;
-  background: center center no-repeat;
-  background-size: cover;
+  display: block;
+  width: 10em;
+  height: 10em;
+  box-sizing: border-box;
+  transform-origin: 0em 0em;
+  transform: translateZ(0) scale(0.1);
+  backface-visibility: hidden;
+}
+.ld-ring:after {
+  border-radius: 50%;
+  border: 1.5em solid currentColor;
+  border-left-color: transparent;
 }
 .ld-ball:after {
   border-radius: 50%;
   background: currentColor;
 }
-.ld-pie:after {
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 0.5em;
-  -webkit-background-clip: padding-box;
-  border-color: currentColor currentColor currentColor transparent;
-}
-.ld-ring:after {
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 0.15em;
-  -webkit-background-clip: padding-box;
-  border-color: currentColor currentColor currentColor transparent;
-  box-sizing: border-box;
-}
 .ld-hourglass:after {
-  width: 0;
-  height: 0;
-  background: none;
   border-radius: 50%;
-  border-style: solid;
-  border-width: 0.5em;
-  border-color: currentColor transparent currentColor transparent;
+  border: 5em solid currentColor;
+  border-left-color: transparent;
+  border-right-color: transparent;
 }
 .ld-cross:after {
-  width: 18%;
-  height: 18%;
+  position: absolute;
+  height: 2.5em;
+  transform: translateZ(0) scale(0.1) translate(0, 3.5em);
   background: currentColor;
-  box-shadow: 0 0.18em 0 1px currentColor, 0 -0.18em 0 1px currentColor, 0.18em 0 0 1px currentColor, -0.18em 0 0 1px currentColor, 0 0.36em 0 1px currentColor, 0 -0.36em 0 1px currentColor, 0.36em 0 0 1px currentColor, -0.36em 0 0 1px currentColor;
+}
+.ld-cross:before {
+  content: " ";
+  display: block;
+  width: 10em;
+  height: 10em;
+  box-sizing: border-box;
+  transform-origin: 0em 0em;
+  transform: translateZ(0) scale(0.1);
+  backface-visibility: hidden;
+  position: absolute;
+  width: 2.5em;
+  transform: translateZ(0) scale(0.1) translate(3.5em, 0);
+  background: currentColor;
 }
 .ld-square:after {
-  width: 90%;
-  height: 90%;
   background: currentColor;
 }
+.ld-pie:after {
+  border-radius: 50%;
+  border: 5em solid currentColor;
+  border-left-color: transparent;
+}
 .ld-spinner:after {
-  width: 20%;
-  height: 20%;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(0) scale(0.1) translate(4em, 4em);
   border-radius: 50%;
   background: none;
-  box-shadow: 0 0.5em 0 0 currentColor,0 -.5em 0 0 currentColor,.5em 0 0 0 currentColor,-.5em 0 0 0 currentColor,.35355339059327373em .35355339059327373em 0 0 currentColor,-.35355339059327373em .35355339059327373em 0 0 currentColor,.35355339059327373em -.35355339059327373em 0 0 currentColor,-.35355339059327373em -.35355339059327373em 0 0 currentColor;
+  box-shadow: 0 5em 0 0 currentColor,0 -5em 0 0 currentColor,5em 0 0 0 currentColor,-5em 0 0 0 currentColor,3.5355339059327373em 3.5355339059327373em 0 0 currentColor,-3.5355339059327373em 3.5355339059327373em 0 0 currentColor,3.5355339059327373em -3.5355339059327373em 0 0 currentColor,-3.5355339059327373em -3.5355339059327373em 0 0 currentColor;
 }
 .ld-loader {
   background-size: cover;
