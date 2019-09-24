@@ -1,0 +1,9 @@
+{
+  "blur": {"unit": "px"},
+  "rush-btt": {"offset": 300},
+  "rush-tbb": {"offset": 300},
+  "rush-ltr": {"offset": 300},
+  "rush-rtl": {"offset": 300},
+  "swim": {"unit": "px"},
+  "tremble": {"unit": "px"}
+}

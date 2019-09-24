@@ -12,6 +12,7 @@ alias = do
   "coin-h": <[coin]>
   "shake-h": <[shake]>
 
+custom = JSON.parse(fs.read-file-sync 'src/config.json' .toString!)
 all = [".#{prefix} { transform-origin: 50% 50%; transform-box: fill-box; }"]
 console.log "prepare dist folder ... "
 fs-extra.ensure-dir-sync "#dir/entries"
@@ -22,7 +23,10 @@ for k,v of anikit.types =>
   kit = new anikit.anikit k
   if kit.config.repeat => continue # transitional animation should not be in loading.css
   console.log " - #dir/#k.css / #k.min.css "
-  cls = kit.cls {unit: \%}, {name: k, prefix, alias: if alias[k] => ([k] ++ alias[k]) else null }
+  cls = kit.cls(
+    {unit: \%} <<< (custom[k] or {}),
+    {name: k, prefix, alias: if alias[k] => ([k] ++ alias[k]) else null}
+  )
   all.push cls
   css = """
   #{all.0}
