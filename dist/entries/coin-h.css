@@ -9,6 +9,6 @@
     transform: rotateY(3600deg);
   }
 }
-.ld.coin-h,.ld.coin {
+.ld.ld-coin-h,.ld.ld-coin {
   animation: ld-coin-h 2s infinite linear; ; 
 }

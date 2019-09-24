@@ -13,6 +13,6 @@
     transform: translate(-10%,0);
   }
 }
-.ld.wander-h,.ld.wander {
+.ld.ld-wander-h,.ld.ld-wander {
   animation: ld-wander-h 1s infinite linear; ; 
 }

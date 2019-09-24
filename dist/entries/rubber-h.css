@@ -37,6 +37,6 @@
     transform: scaleX(0.9836);
   }
 }
-.ld.rubber-h,.ld.rubber {
+.ld.ld-rubber-h,.ld.ld-rubber {
   animation: ld-rubber-h 1s infinite linear; ; 
 }

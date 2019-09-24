@@ -29,6 +29,6 @@
     transform: translate(-1.6800000000000002%,0);
   }
 }
-.ld.shake-h,.ld.shake {
+.ld.ld-shake-h,.ld.ld-shake {
   animation: ld-shake-h 1s infinite linear; ; 
 }

@@ -826,7 +826,7 @@ transform: translate(0%,-60%) rotate(360deg) }  }
     transform: translate(-10%,0);
   }
 }
-.ld.wander-h,.ld.wander {
+.ld.ld-wander-h,.ld.ld-wander {
   animation: ld-wander-h 1s infinite linear; ; 
 }
 @keyframes ld-pulse
@@ -994,7 +994,7 @@ transform: translate(0%,-60%) rotate(360deg) }  }
     transform: scaleX(0.9836);
   }
 }
-.ld.rubber-h,.ld.rubber {
+.ld.ld-rubber-h,.ld.ld-rubber {
   animation: ld-rubber-h 1s infinite linear; ; 
 }
 @keyframes ld-shake-v
@@ -1060,7 +1060,7 @@ transform: translate(0%,-60%) rotate(360deg) }  }
     transform: translate(-1.6800000000000002%,0);
   }
 }
-.ld.shake-h,.ld.shake {
+.ld.ld-shake-h,.ld.ld-shake {
   animation: ld-shake-h 1s infinite linear; ; 
 }
 @keyframes ld-tick
@@ -1542,7 +1542,7 @@ transform: translate(0%,-60%) rotate(360deg) }  }
     transform: rotateY(3600deg);
   }
 }
-.ld.coin-h,.ld.coin {
+.ld.ld-coin-h,.ld.ld-coin {
   animation: ld-coin-h 2s infinite linear; ; 
 }
 @keyframes ld-coin-v
