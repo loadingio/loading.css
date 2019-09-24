@@ -1,0 +1,10 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-vortex-in {
+  0%, 60% { animation-timing-function: cubic-bezier(0.3, 0, 1, 0.7); }
+  0% { opacity: 0; transform: rotate(-1800deg) scale(0.3); }
+  60% { opacity: 1; transform: rotate(0deg) scale(1); }
+  100% { opacity: 1; transform: rotate(0deg) scale(1); }
+}
+.ld.ld-vortex-in {
+  animation: ld-vortex-in 1s 1 linear; animation-fill-mode: forwards;transform: matrix(0.3,0,0,0.3,0,0); 
+}

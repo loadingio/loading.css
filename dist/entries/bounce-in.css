@@ -1,0 +1,86 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-bounce-in
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.0383,0.3388,0.0421,0.6652);
+    transform: matrix(0.01,0,0,0.01,0,0);
+    opacity: 1;
+  }
+  4.7% {
+    animation-timing-function: cubic-bezier(0.3296,0.3336,0.5772,0.6672);
+    transform: matrix(0.556,0,0,0.556,0,0);
+    opacity: 1;
+  }
+  8.4% {
+    animation-timing-function: cubic-bezier(0.0781,0.1617,0.0874,0.9301);
+    transform: matrix(0.979,0,0,0.979,0,0);
+    opacity: 1;
+  }
+  12.4% {
+    animation-timing-function: cubic-bezier(0.8341,0.1496,0.8634,0.7673);
+    transform: matrix(1.153,0,0,1.153,0,0);
+    opacity: 1;
+  }
+  16.3% {
+    animation-timing-function: cubic-bezier(0.3264,0.3332,0.5758,0.6695);
+    transform: matrix(1.008,0,0,1.008,0,0);
+    opacity: 1;
+  }
+  21.2% {
+    animation-timing-function: cubic-bezier(0.0921,0.1883,0.3277,1);
+    transform: matrix(0.704,0,0,0.704,0,0);
+    opacity: 1;
+  }
+  24.5% {
+    animation-timing-function: cubic-bezier(0.6905,0.0944,0.8759,0.7624);
+    transform: matrix(0.626,0,0,0.626,0,0);
+    opacity: 1;
+  }
+  27.7% {
+    animation-timing-function: cubic-bezier(0.3688,0.332,0.624,0.6684);
+    transform: matrix(0.704,0,0,0.704,0,0);
+    opacity: 1;
+  }
+  32.6% {
+    animation-timing-function: cubic-bezier(0.1368,0.2364,0.2451,0.9049);
+    transform: matrix(0.958,0,0,0.958,0,0);
+    opacity: 1;
+  }
+  37.4% {
+    animation-timing-function: cubic-bezier(0.5936,0.0846,0.3495,1);
+    transform: matrix(1.085,0,0,1.085,0,0);
+    opacity: 1;
+  }
+  49.5% {
+    animation-timing-function: cubic-bezier(0.5522,0.0981,0.3807,1);
+    transform: matrix(0.802,0,0,0.802,0,0);
+    opacity: 1;
+  }
+  62.4% {
+    animation-timing-function: cubic-bezier(0.4497,0.1349,0.4911,1);
+    transform: matrix(1.044,0,0,1.044,0,0);
+    opacity: 1;
+  }
+  74.1% {
+    animation-timing-function: cubic-bezier(0.429,0,0.5239,1);
+    transform: matrix(0.914,0,0,0.914,0,0);
+    opacity: 1;
+  }
+  87% {
+    animation-timing-function: cubic-bezier(0.3501,0,0.6422,1);
+    transform: matrix(1.013,0,0,1.013,0,0);
+    opacity: 1;
+  }
+  95.8% {
+    animation-timing-function: cubic-bezier(0.3653,0,0.6776,1);
+    transform: matrix(0.992,0,0,0.992,0,0);
+    opacity: 1;
+  }
+  100% {
+    transform: matrix(1,0,0,1,0,0);
+    opacity: 1;
+  }
+}
+.ld.ld-bounce-in {
+  animation: ld-bounce-in 1s 1 linear; animation-fill-mode: forwards;transform: matrix(0.01,0,0,0.01,0,0); 
+}

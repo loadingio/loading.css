@@ -1,0 +1,42 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-rubber-v
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.1858,0.2841,0.5834,1.4615);
+    transform: scaleY(1);
+  }
+  31% {
+    animation-timing-function: cubic-bezier(0.0467,0.1102,0.4803,1.4719);
+    transform: scaleY(1.1354);
+  }
+  41% {
+    animation-timing-function: cubic-bezier(0.0469,0.1108,0.4775,1.4732);
+    transform: scaleY(0.9052);
+  }
+  51% {
+    animation-timing-function: cubic-bezier(0.0478,0.1131,0.4723,1.4819);
+    transform: scaleY(1.0664);
+  }
+  61% {
+    animation-timing-function: cubic-bezier(0.0506,0.1192,0.4639,1.4818);
+    transform: scaleY(0.9536);
+  }
+  71% {
+    animation-timing-function: cubic-bezier(0.0581,0.1374,0.457,1.4901);
+    transform: scaleY(1.0326);
+  }
+  81% {
+    animation-timing-function: cubic-bezier(0.0765,0.1813,0.4542,1.4923);
+    transform: scaleY(0.9772);
+  }
+  91% {
+    animation-timing-function: cubic-bezier(0.1747,0.3181,0.341,0.878);
+    transform: scaleY(1.016);
+  }
+  100% {
+    transform: scaleY(0.9836);
+  }
+}
+.ld.ld-rubber-v {
+  animation: ld-rubber-v 1s infinite linear; ; 
+}

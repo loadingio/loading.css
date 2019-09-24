@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-swing{0%{animation-timing-function:cubic-bezier(0.9647,0.2413,-0.0705,0.7911);transform:rotate(-30deg)}51%{animation-timing-function:cubic-bezier(0.9226,0.2631,-0.0308,0.7628);transform:rotate(29.97deg)}100%{transform:rotate(-30deg)}}.ld.ld-swing{animation:ld-swing 1s infinite linear}

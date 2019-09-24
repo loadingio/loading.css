@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-blink{0%{opacity:1}49.75%{opacity:1}50.25%{opacity:0}99.5%{opacity:0}100%{opacity:1}}.ld.ld-blink{animation:ld-blink 1s infinite linear}

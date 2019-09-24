@@ -1,0 +1,17 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-rush-ltr-in {
+  0% { animation-timing-function: cubic-bezier(0,0.5,0.5,1); opacity: 0 }
+  5% { opacity: 1}
+  0% { transform: translateX(-78.47520861406802%) skewX(30deg); }
+30% { transform: translateX(2.5743741577959263%) skewX(-15deg); }
+40% { transform: translateX(8.574374157795926%) skewX(-15deg); }
+55.00000000000001% { transform: translateX(-4.212879922796667%) skewX(7.5deg); }
+70% { transform: translateX(2.097390810087623%) skewX(-3.75deg); }
+80% { transform: translateX(0%) skewX(0deg); }
+100% { transform: translateX(0%) skewX(0deg); }
+
+  100% { opacity: 1}
+}
+.ld.ld-rush-ltr-in {
+  animation: ld-rush-ltr-in 1s 1 linear; animation-fill-mode: forwards;transform: translateX(-78.47520861406802%) skewX(30deg);opacity: 0; 
+}

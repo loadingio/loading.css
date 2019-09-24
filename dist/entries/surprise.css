@@ -1,0 +1,17 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-surprise {
+  0% { transform: skewX(0deg) scale(1); }
+  10% { transform: skewX(-25deg) scale(0.5); }
+  20% { transform: skewX(-25deg) scale(0.5); }
+  30% { transform: skewX(25deg) scale(1); }
+  40% { transform: skewX(-25deg) scale(1); }
+  50% { transform: skewX(25deg) scale(1); }
+  60% { transform: skewX(-25deg) scale(1); }
+  70% { transform: skewX(25deg) scale(1); }
+  80% { transform: skewX(-25deg) scale(1); }
+  90% { transform: skewX(25deg) scale(1); }
+  100% { transform: skewX(-25deg) scale(1); }
+}
+.ld.ld-surprise {
+  animation: ld-surprise 1s infinite linear; ; 
+}

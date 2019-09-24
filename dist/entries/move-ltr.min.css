@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-move-ltr{0%{transform:translate(0,0)}40%{transform:translate(80%,0)}49.99999%{transform:translate(99.99998%,0)}50%{transform:translate(-100%,0)}50.00001%{transform:translate(-99.99998%,0)}60%{transform:translate(-80%,0)}100%{transform:translate(0,0)}}.ld.ld-move-ltr{animation:ld-move-ltr 1s infinite linear}

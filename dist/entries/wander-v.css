@@ -1,0 +1,18 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-wander-v
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.9647,0.2413,-0.0705,0.7911);
+    transform: translate(0,-10%);
+  }
+  51% {
+    animation-timing-function: cubic-bezier(0.9226,0.2631,-0.0308,0.7628);
+    transform: translate(0,9.99%);
+  }
+  100% {
+    transform: translate(0,-10%);
+  }
+}
+.ld.ld-wander-v {
+  animation: ld-wander-v 1s infinite linear; ; 
+}

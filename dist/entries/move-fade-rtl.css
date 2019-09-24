@@ -1,0 +1,35 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-move-fade-rtl
+{
+  0% {
+    transform: translate(0%,0%);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(-80%,0%);
+    opacity: 1;
+  }
+  49.99999% {
+    transform: translate(-99.99998%,0%);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(100%,0%);
+    opacity: 0;
+  }
+  50.00001% {
+    transform: translate(99.99998%,0%);
+    opacity: 0;
+  }
+  60% {
+    transform: translate(80%,0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0%,0%);
+    opacity: 1;
+  }
+}
+.ld.ld-move-fade-rtl {
+  animation: ld-move-fade-rtl 1s infinite linear; ; 
+}

@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-float-ltr-in{0%{animation-timing-function:cubic-bezier(0.2242,0.7499,0.3142,0.8148);transform:translate(-14.925%,0);opacity:.005}100%{transform:translate(0,0);opacity:1}}.ld.ld-float-ltr-in{animation:ld-float-ltr-in 1s 1 linear;animation-fill-mode:forwards;transform:matrix(1,0,0,1,-14.925,0);opacity:.005}

@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-wrench{20%,36%,70%,86%{transform:rotate(0)}0%,50%,100%{transform:rotate(45deg)}}.ld.ld-wrench{animation:ld-wrench 1s infinite linear}

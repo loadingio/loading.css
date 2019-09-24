@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-bounceAlt{0%{animation-timing-function:cubic-bezier(0.1348,0.3256,0.2495,0.8687);transform:translate(0,0)}51%{animation-timing-function:cubic-bezier(0.7426,0.1782,0.8523,0.6514);transform:translate(0,-14%)}100%{transform:translate(0,0)}}.ld.ld-bounceAlt{animation:ld-bounceAlt 1s infinite linear}

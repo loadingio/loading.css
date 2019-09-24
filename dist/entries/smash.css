@@ -1,0 +1,30 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-smash
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.3385,0.332,0.6667,0.6667);
+    transform: rotate(0deg);
+  }
+  40.8% {
+    animation-timing-function: cubic-bezier(0.3316,0.3338,0.5714,1.3045);
+    transform: rotate(24.48deg);
+  }
+  48.5% {
+    animation-timing-function: cubic-bezier(0.9673,0.2776,0.6667,0.6667);
+    transform: rotate(29.07deg);
+  }
+  51% {
+    animation-timing-function: cubic-bezier(0.1933,0.2947,-0.0572,0.7191);
+    transform: rotate(25.38deg);
+  }
+  60.8% {
+    animation-timing-function: cubic-bezier(0.0583,2.8507,0.8558,1);
+    transform: rotate(0.54deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.ld.ld-smash {
+  animation: ld-smash 1s infinite linear; ; 
+}

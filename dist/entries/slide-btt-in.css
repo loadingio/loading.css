@@ -1,0 +1,21 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-slide-btt-in
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.1006,0.3357,-0.2396,0.6703);
+    transform: translate(0%,199%);
+    opacity: 0;
+  }
+  2% {
+    animation-timing-function: cubic-bezier(0.2668,0.6542,0.5372,0.8035);
+    transform: translate(0%,124.8%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0%,0%);
+    opacity: 1;
+  }
+}
+.ld.ld-slide-btt-in {
+  animation: ld-slide-btt-in 1s 1 linear; animation-fill-mode: forwards;transform: matrix(1,0,0,1,0,199);opacity: 0; 
+}

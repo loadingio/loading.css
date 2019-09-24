@@ -1,0 +1,26 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-squeeze
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.1685,0.4459,0.3641,0.7833);
+    transform: scale(0.5,1);
+  }
+  30% {
+    animation-timing-function: cubic-bezier(0.0995,0.199,0.9948,0.959);
+    transform: scale(0.9490000000000001,0.5509999999999999);
+  }
+  50% {
+    animation-timing-function: cubic-bezier(0.6064,0.3078,0.5406,0.6764);
+    transform: scale(1,0.5);
+  }
+  55% {
+    animation-timing-function: cubic-bezier(0.1401,0.5826,0.6091,0.9651);
+    transform: scale(0.8019999999999999,0.6980000000000001);
+  }
+  100% {
+    transform: scale(0.5,1);
+  }
+}
+.ld.ld-squeeze {
+  animation: ld-squeeze 1s infinite linear; ; 
+}

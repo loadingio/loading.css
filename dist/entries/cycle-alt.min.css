@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-cycle-alt{0%{animation-timing-function:cubic-bezier(0.3333,0.3333,0.6667,0.6667);transform:rotate(0)}100%{transform:rotate(-360deg)}}.ld.ld-cycle-alt{animation:ld-cycle-alt 1s infinite linear}

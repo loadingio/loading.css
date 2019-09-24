@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-spin{0%{animation-timing-function:cubic-bezier(0.5856,0.0703,0.4143,0.9297);transform:rotate(0)}100%{transform:rotate(360deg)}}.ld.ld-spin{animation:ld-spin 1s infinite linear}

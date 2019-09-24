@@ -1,0 +1,46 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-slide-ttb
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.4652,0.1051,0.774,0.6426);
+    transform: translate(0%,0%);
+    opacity: 1;
+  }
+  22.5% {
+    animation-timing-function: cubic-bezier(0.4142,0.3131,0.7623,0.6513);
+    transform: translate(0%,47.8%);
+    opacity: 1;
+  }
+  45% {
+    animation-timing-function: cubic-bezier(0.3615,0.331,0.9646,1.3461);
+    transform: translate(0%,147.8%);
+    opacity: 1;
+  }
+  47.5% {
+    animation-timing-function: cubic-bezier(0.7006,0.3332,0.6667,0.6667);
+    transform: translate(0%,165.6%);
+    opacity: 0;
+  }
+  50% {
+    animation-timing-function: cubic-bezier(0.1604,0.3176,-0.0218,0.6965);
+    transform: translate(0%,-200%);
+    opacity: 0;
+  }
+  51% {
+    animation-timing-function: cubic-bezier(0.1983,0.3529,0.5263,0.6945);
+    transform: translate(0%,-179.8%);
+    opacity: 0;
+  }
+  80.4% {
+    animation-timing-function: cubic-bezier(0.2342,0.3708,0.5422,0.9065);
+    transform: translate(0%,-38.4%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0%,0%);
+    opacity: 1;
+  }
+}
+.ld.ld-slide-ttb {
+  animation: ld-slide-ttb 1s infinite linear; ; 
+}

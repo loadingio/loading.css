@@ -1,0 +1,58 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-clock {
+0% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(0deg);
+}
+8.33333% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(30deg);
+}
+16.66667% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(60deg);
+}
+25% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(90deg);
+}
+33.33333% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(120deg);
+}
+41.66667% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(150deg);
+}
+50% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(180deg);
+}
+58.33333% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(210deg);
+}
+66.66667% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(240deg);
+}
+75% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(270deg);
+}
+83.33333% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(300deg);
+}
+91.66667% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(330deg);
+}
+100% {
+  animation-timing-function: cubic-bezier(0,0.7,0.30000000000000004,1);
+  transform: rotate(360deg);
+}
+}
+.ld.ld-clock {
+  animation: ld-clock 12s infinite linear; ; 
+}

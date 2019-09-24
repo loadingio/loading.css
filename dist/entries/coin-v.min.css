@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-coin-v{0%{animation-timing-function:cubic-bezier(0.5856,0.0703,0.4143,0.9297);transform:rotateX(0)}100%{transform:rotateX(3600deg)}}.ld.ld-coin-v{animation:ld-coin-v 2s infinite linear}

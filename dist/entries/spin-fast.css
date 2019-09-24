@@ -1,0 +1,14 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-spin-fast
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.5856,0.0703,0.4143,0.9297);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+.ld.ld-spin-fast {
+  animation: ld-spin-fast 1s infinite linear; ; 
+}

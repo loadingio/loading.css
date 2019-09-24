@@ -1,0 +1,18 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-rush-ttb {
+  0% { animation-timing-function: cubic-bezier(0,0.5,0.5,1); opacity: 0 }
+  5% { opacity: 1}
+  0% { transform: translateY(-78.47520861406802%) skewY(30deg); }
+25% { transform: translateY(2.5743741577959263%) skewY(-15deg); }
+33% { transform: translateY(8.574374157795926%) skewY(-15deg); }
+44% { transform: translateY(-4.212879922796667%) skewY(7.5deg); }
+55.00000000000001% { transform: translateY(2.097390810087623%) skewY(-3.75deg); }
+66% { transform: translateY(0%) skewY(0deg); }
+80% { transform: translateY(0%) skewY(0deg); }
+100% { transform: translateY(60%) skewY(30deg); }
+
+  100% { opacity: 1}
+}
+.ld.ld-rush-ttb {
+  animation: ld-rush-ttb 1s infinite linear; ; 
+}

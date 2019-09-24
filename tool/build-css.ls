@@ -1,25 +1,35 @@
-require! <[fs fs-extra anikit]>
-output = []
-output.push """
-  .ld { transform-origin: 50% 50%; transform-box: fill-box; }
-"""
-for k,v of anikit.types => 
-  {mod,config} = anikit.get k
-  config <<< {name: "ld-#{config.name}"}
-  if config.repeat => continue
-  mod = require "../node_modules/anikit/src/kits/#{mod.name}"
-  if !mod.css => continue
-  css = mod.css config
-  if mod.js and config.repeat =>
-    js = mod.js 0, config
-    init-values = (["animation-fill-mode: forwards"] ++ ["#name: #value" for name,value of js]).join(\;)
-  else init-values = "";
+require! <[fs fs-extra anikit uglifycss]>
 
-  output.push css
-  output.push """
-    .ld.#{config.name} {
-      animation: #{config.name} #{config.dur or 1}s #{config.repeat or \infinite}; #init-values
-    }
+alias = do
+  "rubber-h": <[rubber]>
+  "wander-h": <[wander]>
+  "coin-h": <[coin]>
+  "shake-h": <[shake]>
+
+all = [".ld { transform-origin: 50% 50%; transform-box: fill-box; }"]
+console.log "prepare dist folder ... "
+fs-extra.ensure-dir-sync \dist/entries
+
+console.log "generating css files for each animation ... "
+
+for k,v of anikit.types =>
+  console.log " - dist/entries/#k.css / #k.min.css "
+  kit = new anikit.anikit k
+  cls = kit.cls {unit: \%}, {name: "ld-#k", prefix: \.ld, alias: if alias[k] => ([k] ++ alias[k]) else null }
+  all.push cls
+  css = """
+  #{all.0}
+  #cls
   """
+  fs.write-file-sync "dist/entries/#k.css", css
 
-console.log output.join(\\n)
+  css-min = uglifycss.processString css
+  fs.write-file-sync "dist/entries/#k.min.css", css-min
+
+console.log "generating dist/loading.css ..."
+css = all.join(\\n)
+fs.write-file-sync "dist/loading.css", css
+
+console.log "generating dist/loading.min.css ..."
+css-min = uglifycss.processString css
+fs.write-file-sync "dist/loading.min.css", css-min

@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-fade-in{0%{animation-timing-function:cubic-bezier(0.2242,0.7499,0.3142,0.8148);opacity:0}100%{opacity:1}}.ld.ld-fade-in{animation:ld-fade-in 1s 1 linear;animation-fill-mode:forwards;opacity:0}

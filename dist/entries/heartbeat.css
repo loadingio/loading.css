@@ -1,0 +1,22 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-heartbeat
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.1678,0.6042,0.5465,3.0859);
+    transform: scale(1.3);
+  }
+  30% {
+    animation-timing-function: cubic-bezier(0.3206,0.3435,0.6825,0.6598);
+    transform: scale(1.15);
+  }
+  31% {
+    animation-timing-function: cubic-bezier(0.2811,0.5061,0.5347,0.909);
+    transform: scale(1.1458);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.ld.ld-heartbeat {
+  animation: ld-heartbeat 1s infinite linear; ; 
+}

@@ -1,0 +1,28 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-move-btt
+{
+  0% {
+    transform: translate(0%,0%);
+  }
+  40% {
+    transform: translate(0%,-80%);
+  }
+  49.99999% {
+    transform: translate(0%,-99.99998%);
+  }
+  50% {
+    transform: translate(0%,100%);
+  }
+  50.00001% {
+    transform: translate(0%,99.99998%);
+  }
+  60% {
+    transform: translate(0%,80%);
+  }
+  100% {
+    transform: translate(0%,0%);
+  }
+}
+.ld.ld-move-btt {
+  animation: ld-move-btt 1s infinite linear; ; 
+}

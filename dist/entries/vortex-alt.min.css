@@ -1,0 +1,1 @@
+.ld{transform-origin:50% 50%;transform-box:fill-box}@keyframes ld-vortex-alt{0%,60%{animation-timing-function:cubic-bezier(0.3,0,1,0.7)}0%{opacity:0;transform:rotate(-1800deg) scale(3)}60%{opacity:1;transform:rotate(0) scale(1)}100%{opacity:0;transform:rotate(0) scale(1)}}.ld.ld-vortex-alt{animation:ld-vortex-alt 1s infinite linear}

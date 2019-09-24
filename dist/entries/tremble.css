@@ -1,0 +1,37 @@
+.ld { transform-origin: 50% 50%; transform-box: fill-box; }
+@keyframes ld-tremble {
+  0% { transform: translate(0%,0%) rotate(0deg) scale(1) }
+  3.33333% { transform: translate(-0.12615018264754452%,0.9698977821118335%) rotate(0deg) scale(1); animation-timing-function: linear }
+  6.66667% { transform: translate(-0.5619766129265024%,-0.8834956645007898%) rotate(0deg) scale(1); animation-timing-function: linear }
+  10% { transform: translate(0.453141551444475%,0.6694804390207767%) rotate(0deg) scale(1); animation-timing-function: linear }
+  13.33333% { transform: translate(-0.3370664187988621%,0.5574421086412933%) rotate(0deg) scale(1); animation-timing-function: linear }
+  16.66667% { transform: translate(0.8757850658430284%,-0.34267586284722573%) rotate(0deg) scale(1); animation-timing-function: linear }
+  20% { transform: translate(-0.8078957184754297%,0.9946198880302146%) rotate(0deg) scale(1); animation-timing-function: linear }
+  23.33333% { transform: translate(0.7270980696559657%,-0.14172867092182806%) rotate(0deg) scale(1); animation-timing-function: linear }
+  26.66667% { transform: translate(-0.999440595260007%,0.37439598865251655%) rotate(0deg) scale(1); animation-timing-function: linear }
+  30% { transform: translate(0.9872372658375417%,0.8081860061166029%) rotate(0deg) scale(1); animation-timing-function: linear }
+  33.33333% { transform: translate(-0.9592602399818849%,-0.7680026042383505%) rotate(0deg) scale(1); animation-timing-function: linear }
+  36.66667% { transform: translate(0.9060947861836881%,0.8989009211917853%) rotate(0deg) scale(1); animation-timing-function: linear }
+  40% { transform: translate(-0.9522270459170356%,0.20606909520901184%) rotate(0deg) scale(1); animation-timing-function: linear }
+  43.33333% { transform: translate(0.9831449526833496%,-0.9992616779089113%) rotate(0deg) scale(1); animation-timing-function: linear }
+  46.66667% { transform: translate(-0.6160150062213702%,0.9610644092985385%) rotate(0deg) scale(1); animation-timing-function: linear }
+  50% { transform: translate(0.7104664934976335%,-0.5020374617331373%) rotate(0deg) scale(1); animation-timing-function: linear }
+  53.33333% { transform: translate(-0.7935666840812218%,-0.7165598387038524%) rotate(0deg) scale(1); animation-timing-function: linear }
+  56.66667% { transform: translate(0.19218446082439922%,0.5289134353453799%) rotate(0deg) scale(1); animation-timing-function: linear }
+  60% { transform: translate(-0.31444758182943544%,-0.9519256253140553%) rotate(0deg) scale(1); animation-timing-function: linear }
+  63.33333% { transform: translate(0.43168635354162377%,-0.06530224722951339%) rotate(0deg) scale(1); animation-timing-function: linear }
+  66.66667% { transform: translate(0.27337416005034076%,-0.1752789095075209%) rotate(0deg) scale(1); animation-timing-function: linear }
+  70% { transform: translate(-0.14984552198402024%,-0.9121999866105953%) rotate(0deg) scale(1); animation-timing-function: linear }
+  73.33333% { transform: translate(0.023921750817491372%,0.6195431224826276%) rotate(0deg) scale(1); animation-timing-function: linear }
+  76.66667% { transform: translate(-0.6795767410857682%,-0.7893185595278053%) rotate(0deg) scale(1); animation-timing-function: linear }
+  80% { transform: translate(0.5816031088249554%,-0.4032926511505005%) rotate(0deg) scale(1); animation-timing-function: linear }
+  83.33333% { transform: translate(-0.4743367541507919%,0.985732169363239%) rotate(0deg) scale(1); animation-timing-function: linear }
+  86.66667% { transform: translate(0.9382276109173351%,-0.9973794650381614%) rotate(0deg) scale(1); animation-timing-function: linear }
+  90% { transform: translate(-0.887081560498492%,0.31304433414445176%) rotate(0deg) scale(1); animation-timing-function: linear }
+  93.33333% { transform: translate(0.8217623590388019%,0.8449190432267653%) rotate(0deg) scale(1); animation-timing-function: linear }
+  96.66667% { transform: translate(-0.9931677836265367%,-0.6924475366821162%) rotate(0deg) scale(1); animation-timing-function: linear }
+  100% { transform: translate(0,0) rotate(0) scale(1) }
+}
+.ld.ld-tremble {
+  animation: ld-tremble 0.5s infinite linear; ; 
+}

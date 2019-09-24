@@ -1,3 +1,7 @@
+/*
+  with old method, spinner will shift when rotating if font-size contains floating point ( such as 22.5px ).
+  here we use 2em in width and height, scaling back to 1em with transform: scale(.5) to prevent this effect.
+*/
 .ld-ball,
 .ld-ring,
 .ld-hourglass,
