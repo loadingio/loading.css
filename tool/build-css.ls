@@ -13,8 +13,9 @@ fs-extra.ensure-dir-sync \dist/entries
 console.log "generating css files for each animation ... "
 
 for k,v of anikit.types =>
-  console.log " - dist/entries/#k.css / #k.min.css "
   kit = new anikit.anikit k
+  if kit.config.repeat => continue # transitional animation should not be in loading.css
+  console.log " - dist/entries/#k.css / #k.min.css "
   cls = kit.cls {unit: \%}, {name: "ld-#k", prefix: \.ld, alias: if alias[k] => ([k] ++ alias[k]) else null }
   all.push cls
   css = """
