@@ -14,21 +14,21 @@ Loading.css and its parent project `anikit` is used in building GIF, APNG and an
 
 ## Usage
 
-1. download and include [loading.css](https://raw.githubusercontent.com/loadingio/loading.css/c0b955eba7a7d17819d110ec661e199a2482bdea/preview.gif):
+1. download and include [loading.css](https://raw.githubusercontent.com/loadingio/loading.css/2.0.0/dist/loading.min.css):
 
 ```
     <link rel="stylesheet" type="text/css" href="loading.css"/>
 ```
 
-2. check the [loading.css animation gallery](https://loading.io/animation/) for the animations you want to use. For example, say you want to use the `spin` animation 
+2. Check the [loading.css animation gallery](https://loading.io/animation/) for the animations you want to use. For example, say you want to use the `spin` animation 
 
-3. use the name as a CSS class prefixed with `ld` on the element you want to animate:
+3. Use the name as a CSS class prefixed with `ld` on the element you want to animate:
 
 ```
     <div class="ld ld-spin"></div>
 ```
 
-4. for more information, check out [loading.css animation documentation](https://loading.io/animation/).
+4. For more information, check out [loading.css animation documentation](https://loading.io/animation/).
 
 
 ## LICENSE
