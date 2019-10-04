@@ -22,6 +22,14 @@ You can find more about animation generation in [loading.io](https://loading.io/
     <link rel="stylesheet" type="text/css" href="loading.css"/>
 ```
 
+you an use a CDN, such as, from jsDelivr:
+
+```
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@2.0.0/dist/loading.min.css"/>
+```
+
+
+
 2. Check the [loading.css animation gallery](https://loading.io/animation/) for the animations you want to use. For example, say you want to use the `spin` animation 
 
 3. Use the name as a CSS class prefixed with `ld` on the element you want to animate:
