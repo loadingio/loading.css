@@ -6,10 +6,12 @@
 
 Loading.css is used in building GIF, APNG and animated SVG in loading.io. Check following links to see how it works:
 
- * [Upload Animation Generator for both GIF and SVG](https://loading.io/animation/icon/)
- * [Loading.io Animated Icon Library](https://loading.io/icon/)
- * [Animated Pattern Generator](https://loading.io/pattern/)
- * [Animated Text Generator](https://loading.io/animation/text/)
+ * [GIF / SVG Animation Generator from Any Image](https://loading.io/animation/icon/) - upload your own image and generate GIF or APNG images with transition.css and loading.css.
+ * [Loading.io Animated Icons Library](https://loading.io/icon/) - Customizable, animatable Loading.io's icon library powered by loading.css and transition.css.
+ * [Loading Patterns](https://loading.io/pattern/) - Customizable, animatable Loading.io's pattern library powered by loading.css and transition.css.
+ * [Animated Text Generator](https://loading.io/animation/text/) - convert your text into GIF / SVG animations.
+
+You can find more about animation generation in [loading.io](https://loading.io/).
 
 
 ## Usage
