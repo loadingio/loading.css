@@ -4,7 +4,7 @@
 
 60+ Handcrafted CSS animations that are seamless repeatable. All animations in loading.css are designed for both one time and infinitely played. Online demo could be found [here (Loading.css - 50+ Seamless Repeatable CSS Animation · Loading.io ).](https://loading.io/animation/)
 
-Loading.css and its parent project `anikit` is used in building GIF, APNG and animated SVG in loading.io. Check following links to see how it works:
+Loading.css is used in building GIF, APNG and animated SVG in loading.io. Check following links to see how it works:
 
  * [Upload Animation Generator for both GIF and SVG](https://loading.io/animation/icon/)
  * [Loading.io Animated Icon Library](https://loading.io/icon/)
