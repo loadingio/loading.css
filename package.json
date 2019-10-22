@@ -2,9 +2,9 @@
   "author": "zbryikt",
   "name": "loading.css",
   "license": "MIT",
-  "description": "handcrafted css animation dedicated for repeatable, infinitely playing.",
-  "version": "0.0.1",
-  "homepage": "https://github.com/loadingio/loading.css",
+  "description": "60+ handcrafted css animation dedicated for repeatable, infinitely playing.",
+  "version": "2.0.0",
+  "homepage": "https://loading.io/animation/",
   "repository": {
     "type": "git",
     "url": "https://github.com/loadingio/loading.css"
