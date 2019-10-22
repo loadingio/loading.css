@@ -16,7 +16,7 @@ You can find more about animation generation in [loading.io](https://loading.io/
 
 ## Usage
 
-1. download and include [loading.css](https://raw.githubusercontent.com/loadingio/loading.css/2.0.0/dist/loading.min.css):
+1. download and include [loading.css](https://raw.githubusercontent.com/loadingio/loading.css/v2.0.0/dist/loading.min.css):
 
 ```
     <link rel="stylesheet" type="text/css" href="loading.css"/>
@@ -25,7 +25,7 @@ You can find more about animation generation in [loading.io](https://loading.io/
 you an use a CDN, such as, from jsDelivr:
 
 ```
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@2.0.0/dist/loading.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.min.css"/>
 ```
 
 
