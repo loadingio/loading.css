@@ -1,6 +1,6 @@
 {
   "author": "zbryikt",
-  "name": "loading.css",
+  "name": "@loadingio/loading.css",
   "license": "MIT",
   "description": "60+ handcrafted css animation dedicated for repeatable, infinitely playing.",
   "version": "2.0.0",
