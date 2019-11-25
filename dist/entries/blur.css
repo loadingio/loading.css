@@ -1,7 +1,7 @@
 .ld { transform-origin: 50% 50%; transform-box: fill-box; }
 @keyframes ld-blur {
   0% { filter: blur(0) }
-  50% { filter: blur(10%) }
+  50% { filter: blur(10px) }
   100% { filter: blur(0) }
 }
 .ld.ld-blur {

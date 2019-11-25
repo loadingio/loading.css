@@ -6,23 +6,23 @@
     opacity: 1;
   }
   40% {
-    transform: translate(-80%,0%);
+    transform: translate(-40%,0%);
     opacity: 1;
   }
   49.99999% {
-    transform: translate(-99.99998%,0%);
+    transform: translate(-49.99999%,0%);
     opacity: 0;
   }
   50% {
-    transform: translate(100%,0%);
+    transform: translate(50%,0%);
     opacity: 0;
   }
   50.00001% {
-    transform: translate(99.99998%,0%);
+    transform: translate(49.99999%,0%);
     opacity: 0;
   }
   60% {
-    transform: translate(80%,0%);
+    transform: translate(40%,0%);
     opacity: 1;
   }
   100% {

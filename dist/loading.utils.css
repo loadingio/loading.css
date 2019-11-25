@@ -88,3 +88,57 @@
 .ld-loader {
   background-size: cover;
 }
+.ld.reverse {
+  animation-direction: reverse;
+}
+.ld.xhalf {
+  animation-duration: 0.5s;
+}
+.ld.x1 {
+  animation-duration: 1s;
+}
+.ld.x2 {
+  animation-duration: 2s;
+}
+.ld.x4 {
+  animation-duration: 4s;
+}
+.ld.running {
+  animation-play-state: running;
+}
+.ld.paused {
+  animation-play-state: paused;
+}
+.ld.f00 {
+  animation-delay: 0s;
+}
+.ld.f01 {
+  animation-delay: -0.1s;
+}
+.ld.f02 {
+  animation-delay: -0.2s;
+}
+.ld.f03 {
+  animation-delay: -0.3s;
+}
+.ld.f04 {
+  animation-delay: -0.4s;
+}
+.ld.f05 {
+  animation-delay: -0.5s;
+}
+.ld.f06 {
+  animation-delay: -0.6s;
+}
+.ld.f07 {
+  animation-delay: -0.7s;
+}
+.ld.f08 {
+  animation-delay: -0.8s;
+}
+.ld.f09 {
+  animation-delay: -0.9s;
+}
+.ld.f10 {
+  animation-delay: -1s;
+}
