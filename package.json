@@ -9,10 +9,6 @@
     "type": "git",
     "url": "https://github.com/loadingio/loading.css"
   },
-  "engines": {
-    "node": "=7.6.0",
-    "npm": "=3.9.5"
-  },
   "scripts": {},
   "devDependencies": {
     "LiveScript": ">=1.2.0",
