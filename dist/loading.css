@@ -91,6 +91,12 @@
 .ld.reverse {
   animation-direction: reverse;
 }
+.ld.xp15 {
+  animation-duration: 0.15s;
+}
+.ld.xp35 {
+  animation-duration: 0.35s;
+}
 .ld.xhalf {
   animation-duration: 0.5s;
 }
