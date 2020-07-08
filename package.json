@@ -10,8 +10,8 @@
     "url": "https://github.com/loadingio/loading.css"
   },
   "engines": {
-    "node": "=7.6.0",
-    "npm": "=3.9.5"
+    "node": ">=7.6.0",
+    "npm": ">=3.9.5"
   },
   "scripts": {},
   "devDependencies": {
