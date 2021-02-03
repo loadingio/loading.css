@@ -1,3 +1,10 @@
+# v2.0.1
+
+ - upgrade engine version
+ - upgrade livescript
+ - release dist only
+
+
 # v2.0.0 Change Log
 
  * animations rename: ( old names kept as alias )
