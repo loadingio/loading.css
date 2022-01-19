@@ -1,11 +1,18 @@
-# v2.0.1
+# Change Logs
+
+## v2.0.2
+
+ - add `style` field in package.json
+
+
+## v2.0.1
 
  - upgrade engine version
  - upgrade livescript
  - release dist only
 
 
-# v2.0.0 Change Log
+## v2.0.0
 
  * animations rename: ( old names kept as alias )
    - ld-rubber -> ld-rubber-h
