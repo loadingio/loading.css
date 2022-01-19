@@ -3,7 +3,7 @@
   "name": "@loadingio/loading.css",
   "license": "MIT",
   "description": "60+ handcrafted css animation dedicated for repeatable, infinitely playing.",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "style": "dist/loading.min.css",
   "files": [
     "dist/**/*"
@@ -20,6 +20,7 @@
   "scripts": {},
   "devDependencies": {
     "anikit": "git+https://github.com/loadingio/anikit.git",
+    "fedep": "^1.1.0",
     "livescript": "^1.6.0",
     "stylus": "^0.54.5",
     "uglifycss": "0.0.29"
