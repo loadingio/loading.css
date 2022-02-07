@@ -15,6 +15,13 @@ cat dist/shape.css dist/ctrl.css > dist/loading.utils.css
 echo "minifying loading.css / loading.utils.css ..."
 ./node_modules/.bin/uglifycss dist/loading.css > dist/loading.min.css
 ./node_modules/.bin/uglifycss dist/loading.utils.css > dist/loading.utils.min.css
+
+echo "merge css files into lite.css ..."
+cat dist/shape.css dist/lite.css > dist/lite-bundle.css
+mv dist/lite-bundle.css dist/lite.css
+echo "minifying lite.css ..."
+./node_modules/.bin/uglifycss dist/lite.css > dist/lite.min.css
+
 echo "zipping..."
 zip -r dist/loading-css.zip dist/loading.min.css dist/loading.utils.min.css
 echo "clean up intermediate files..."

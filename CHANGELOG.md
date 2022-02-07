@@ -1,5 +1,11 @@
 # Change Logs
 
+## v3.1.0
+
+ - fix build-css
+ - add lite build: include only 7 pure css loader ( shape + animation ) listed in document page.
+
+
 ## v3.0.0
 
  - release with compact directory structure
