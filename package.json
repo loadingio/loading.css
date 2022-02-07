@@ -3,7 +3,7 @@
   "name": "@loadingio/loading.css",
   "license": "MIT",
   "description": "60+ handcrafted css animation dedicated for repeatable, infinitely playing.",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "style": "dist/loading.min.css",
   "files": [
     "dist/**/*"
