@@ -6,6 +6,7 @@
  - add lite build: include only 7 pure css loader ( shape + animation ) listed in document page.
  - upgrade stylus to prevent warnings
  - use yargs to parse `build-css` arguments
+ - release files also in package root
 
 
 ## v3.0.0
