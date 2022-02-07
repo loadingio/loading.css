@@ -4,6 +4,8 @@
 
  - fix build-css
  - add lite build: include only 7 pure css loader ( shape + animation ) listed in document page.
+ - upgrade stylus to prevent warnings
+ - use yargs to parse `build-css` arguments
 
 
 ## v3.0.0
