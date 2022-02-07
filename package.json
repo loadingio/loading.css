@@ -22,7 +22,8 @@
     "anikit": "git+https://github.com/loadingio/anikit.git",
     "fedep": "^1.1.0",
     "livescript": "^1.6.0",
-    "stylus": "^0.54.5",
-    "uglifycss": "0.0.29"
+    "stylus": "^0.55.0",
+    "uglifycss": "0.0.29",
+    "yargs": "^17.3.1"
   }
 }
