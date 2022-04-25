@@ -41,6 +41,17 @@ you an use a CDN, such as, from jsDelivr:
 4. For more information, check out [loading.css animation documentation](https://loading.io/animation/).
 
 
+## Notice
+
+Animations involving fliping ( e.g., rotateX, rotateY, rotateZ ) cause blinking glitches in Safari ( up to version 15.1 ). It's not a loading.css bug but a browser issue which is not yet solved.
+
+A simple workaround is to wrap animated elements within a container with following style:
+
+    transform: translate3d(0,0,0)
+
+However this creates a stacking context and may not work well with fixed positioned elements.
+
+
 ## LICENSE
 
 MIT License
