@@ -1,5 +1,10 @@
 # Change Logs
 
+## v3.2.0
+
+ - add `important` in ctrl classes
+
+
 ## v3.1.0
 
  - fix build-css
