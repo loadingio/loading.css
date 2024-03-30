@@ -1,0 +1,60 @@
+.ld.reverse {
+  animation-direction: reverse !important;
+}
+.ld.xp15 {
+  animation-duration: 0.15s !important;
+}
+.ld.xp35 {
+  animation-duration: 0.35s !important;
+}
+.ld.xhalf {
+  animation-duration: 0.5s !important;
+}
+.ld.x1 {
+  animation-duration: 1s !important;
+}
+.ld.x2 {
+  animation-duration: 2s !important;
+}
+.ld.x4 {
+  animation-duration: 4s !important;
+}
+.ld.running {
+  animation-play-state: running !important;
+}
+.ld.paused {
+  animation-play-state: paused !important;
+}
+.ld.f00 {
+  animation-delay: 0s !important;
+}
+.ld.f01 {
+  animation-delay: -0.1s !important;
+}
+.ld.f02 {
+  animation-delay: -0.2s !important;
+}
+.ld.f03 {
+  animation-delay: -0.3s !important;
+}
+.ld.f04 {
+  animation-delay: -0.4s !important;
+}
+.ld.f05 {
+  animation-delay: -0.5s !important;
+}
+.ld.f06 {
+  animation-delay: -0.6s !important;
+}
+.ld.f07 {
+  animation-delay: -0.7s !important;
+}
+.ld.f08 {
+  animation-delay: -0.8s !important;
+}
+.ld.f09 {
+  animation-delay: -0.9s !important;
+}
+.ld.f10 {
+  animation-delay: -1s !important;
+}

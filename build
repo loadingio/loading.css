@@ -8,13 +8,18 @@ echo "build src/shape.styl -> dist/shape.css ..."
 echo "build animations..."
 ./node_modules/.bin/lsc tool/build-css.ls
 
-echo "merge css files into loading.css / loading.utils.css ..."
+echo "merge css files into loading.css / utils.css ..."
 cat dist/shape.css dist/ctrl.css dist/loading.css > dist/loading-bundle.css
 mv dist/loading-bundle.css dist/loading.css
-cat dist/shape.css dist/ctrl.css > dist/loading.utils.css
-echo "minifying loading.css / loading.utils.css ..."
+cat dist/shape.css dist/ctrl.css > dist/utils.css
+echo "minifying loading.css / utils.css ..."
 ./node_modules/.bin/uglifycss dist/loading.css > dist/loading.min.css
-./node_modules/.bin/uglifycss dist/loading.utils.css > dist/loading.utils.min.css
+./node_modules/.bin/uglifycss dist/utils.css > dist/utils.min.css
+./node_modules/.bin/uglifycss dist/shape.css > dist/shape.min.css
+./node_modules/.bin/uglifycss dist/ctrl.css > dist/ctrl.min.css
+echo "copy utils to loading.utils for backward compatibility ..."
+cp dist/utils.css dist/loading.utils.css
+cp dist/utils.min.css dist/loading.utils.min.css
 
 echo "merge css files into lite.css ..."
 cat dist/shape.css dist/lite.css > dist/lite-bundle.css
@@ -24,7 +29,5 @@ echo "minifying lite.css ..."
 
 echo "zipping..."
 zip -r dist/loading-css.zip dist/loading.min.css dist/loading.utils.min.css
-echo "clean up intermediate files..."
-rm -f dist/ctrl.css dist/shape.css
 
 echo "done."

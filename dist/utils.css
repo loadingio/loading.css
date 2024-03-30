@@ -1,0 +1,150 @@
+/*
+  with old method, spinner will shift when rotating if font-size contains floating point ( such as 22.5px ).
+  here we use 2em in width and height, scaling back to 1em with transform: scale(.5) to prevent this effect.
+*/
+.ld-ball,
+.ld-ring,
+.ld-hourglass,
+.ld-loader,
+.ld-cross,
+.ld-square,
+.ld-pie,
+.ld-spinner {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  box-sizing: content-box;
+}
+.ld-ball:after,
+.ld-ring:after,
+.ld-hourglass:after,
+.ld-loader:after,
+.ld-cross:after,
+.ld-square:after,
+.ld-pie:after,
+.ld-spinner:after {
+  content: " ";
+  display: block;
+  width: 2em;
+  height: 2em;
+  box-sizing: border-box;
+  transform-origin: 0em 0em;
+  transform: translateZ(0) scale(0.5);
+  backface-visibility: hidden;
+}
+.ld-ring:after {
+  border-radius: 50%;
+  border: 0.3em solid currentColor;
+  border-left-color: transparent;
+}
+.ld-ball:after {
+  border-radius: 50%;
+  background: currentColor;
+}
+.ld-hourglass:after {
+  border-radius: 50%;
+  border: 1em solid currentColor;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.ld-cross:after {
+  position: absolute;
+  height: 0.5em;
+  transform: translateZ(0) scale(0.5) translate(0, 0.75em);
+  background: currentColor;
+}
+.ld-cross:before {
+  content: " ";
+  display: block;
+  width: 0.5em;
+  height: 2em;
+  box-sizing: border-box;
+  transform-origin: 0em 0em;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 0.5em;
+  transform: translateZ(0) scale(0.5) translate(0.75em, 0);
+  background: currentColor;
+}
+.ld-square:after {
+  background: currentColor;
+}
+.ld-pie:after {
+  border-radius: 50%;
+  border: 1em solid currentColor;
+  border-left-color: transparent;
+}
+.ld-spinner:after {
+  position: absolute;
+  width: 0.4em;
+  height: 0.4em;
+  transform: translateZ(0) scale(0.5) translate(0.8em, 0.8em);
+  border-radius: 50%;
+  background: none;
+  box-shadow: 0 1em 0 currentColor,0 -1em 0 currentColor,1em 0 0 currentColor,-1em 0 0 currentColor,.70710678em .70710678em 0 currentColor,-.70710678em .70710678em 0 currentColor,.70710678em -.70710678em 0 currentColor,-.70710678em -.70710678em 0 currentColor;
+}
+.ld-loader {
+  background-size: cover;
+}
+.ld.reverse {
+  animation-direction: reverse !important;
+}
+.ld.xp15 {
+  animation-duration: 0.15s !important;
+}
+.ld.xp35 {
+  animation-duration: 0.35s !important;
+}
+.ld.xhalf {
+  animation-duration: 0.5s !important;
+}
+.ld.x1 {
+  animation-duration: 1s !important;
+}
+.ld.x2 {
+  animation-duration: 2s !important;
+}
+.ld.x4 {
+  animation-duration: 4s !important;
+}
+.ld.running {
+  animation-play-state: running !important;
+}
+.ld.paused {
+  animation-play-state: paused !important;
+}
+.ld.f00 {
+  animation-delay: 0s !important;
+}
+.ld.f01 {
+  animation-delay: -0.1s !important;
+}
+.ld.f02 {
+  animation-delay: -0.2s !important;
+}
+.ld.f03 {
+  animation-delay: -0.3s !important;
+}
+.ld.f04 {
+  animation-delay: -0.4s !important;
+}
+.ld.f05 {
+  animation-delay: -0.5s !important;
+}
+.ld.f06 {
+  animation-delay: -0.6s !important;
+}
+.ld.f07 {
+  animation-delay: -0.7s !important;
+}
+.ld.f08 {
+  animation-delay: -0.8s !important;
+}
+.ld.f09 {
+  animation-delay: -0.9s !important;
+}
+.ld.f10 {
+  animation-delay: -1s !important;
+}

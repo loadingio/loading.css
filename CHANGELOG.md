@@ -1,5 +1,10 @@
 # Change Logs
 
+## v3.2.1
+
+ - generate dist files for shapes (`shape.css`) and control kits (`ctrl.css`). use `utils.css` to replace `loading.utils.css` while still keep the old name for backward compatibility.
+
+
 ## v3.2.0
 
  - add `important` in ctrl classes
